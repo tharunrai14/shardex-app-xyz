@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../logowt80.svg';
 import {
   AppBar,
   Container,
@@ -53,13 +54,14 @@ const useStyles = makeStyles(styles);
 function ConnectWalletPage() {
   const classes = useStyles();
   return (
-    <div>
+    <div >  <img src={logo} alt="Logo" />
       <div className="Title">
+     
         <h1 className="navbar-logo">
-          
+       
         </h1>
       </div>
-
+      
       <Container>
         <Paper className={classes.paperContainer}>
           <Typography

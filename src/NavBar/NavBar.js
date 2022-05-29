@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavBar.css";
-
+import  Image  from "../logowt80.svg";
 class NavBar extends Component {
   state = { clicked: false };
 
   render() {
     return (
-      <nav>
+      <nav><img src={Image} alt='logo'/>
         <div className="Title">
           <h1 className="navbar-logo">
            

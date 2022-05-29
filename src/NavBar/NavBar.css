@@ -1,5 +1,5 @@
 .Title {
-  background: #000000;
+  background: #040404;
   height: 50px;
   text-align: left;
   margin-left: 25%;
@@ -7,7 +7,7 @@
 }
 
 .NavbarItems {
-  background: #0c0c0c;
+  background: #e3dede;
   height: 80px;
   display: flex;
   justify-content: left;
@@ -16,10 +16,11 @@
   width: 75%;
   text-align: left;
   margin-left: 25%;
+  margin-right: 25%;
 }
 
 .navbar-logo {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   justify-self: start;
   margin-left: 0px;
   cursor: pointer;
@@ -33,12 +34,14 @@
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 50px;
-  list-style: none;
+  list-style: disc;
   text-align: left;
   justify-content: end;
   padding-top: 1rem;
-  padding-left: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 25px;
+  
 }
 
 .nav-links {
