@@ -141,7 +141,7 @@ export default function CoinDialog(props) {
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             variant="outlined"
-            placeholder="Paste Address"
+            placeholder="Token Not in List? Paste the Smart Contract Here!"
             error={error !== ""}
             helperText={error}
             fullWidth
@@ -170,8 +170,8 @@ export default function CoinDialog(props) {
       <hr className={classes.hr} />
 
       <DialogActions>
-        <Button autoFocus onClick={submit} color="primary">
-          Enter
+        <Button autoFocus   onClick={submit} color="primary">
+          Import Coin
         </Button>
       </DialogActions>
     </Dialog>

@@ -110,6 +110,7 @@ function CoinSwapper(props) {
       setField1Value(e.target.value);
     },
   };
+ 
 
   // Turns the account's balance into something nice and readable
   const formatBalance = (balance, symbol) => {
@@ -332,7 +333,7 @@ function CoinSwapper(props) {
       <Container maxWidth="xs">
         <Paper className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
-            Swap Coins
+          
           </Typography>
 
           <Grid container direction="column" alignItems="center" spacing={2}>
@@ -403,7 +404,7 @@ function CoinSwapper(props) {
               onClick={swap}
             >
               <LoopIcon />
-              Swap
+              Approve And Swap
             </LoadingButton>
           </Grid>
         </Paper>

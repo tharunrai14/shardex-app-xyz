@@ -9,6 +9,7 @@ import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -31,7 +32,7 @@ const App = () => {
             render={(network) => (
               <div>
                 <NarBar />
-                <Route exact path="/Shardex/">
+                <Route exact path="/Shardex/Swap">
                   <CoinSwapper network={network} />
                 </Route>
 
@@ -47,4 +48,5 @@ const App = () => {
   );
 };
 
+<p>drhsrhrthrthdrthrhdrhfgnfgyjdfgdrtj</p>
 export default App;

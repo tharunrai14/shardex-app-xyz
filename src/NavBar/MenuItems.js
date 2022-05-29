@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "Swap",
-    url: "/Shardex/",
+    url: "/Shardex/Swap",
     cName: "nav-links",
   },
   {

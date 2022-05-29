@@ -8,10 +8,10 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
-import '../App.css'
+import "./cw.css"
 import { grey } from '@mui/material/colors';
 
-const color = grey[900];
+
 
 const styles = (theme) => ({
   paperContainer: {
@@ -21,7 +21,7 @@ const styles = (theme) => ({
     maxWidth: 400,
     margin: "auto",
     marginTop: "200px",
-    color:color
+    textAlign:"CenterFocusStrong"
      },
   fullWidth: {
     width: "100%",
@@ -55,13 +55,7 @@ function ConnectWalletPage() {
   const classes = useStyles();
   return (
     <div >  <img src={logo} alt="Logo" />
-      <div className="Title">
      
-        <h1 className="navbar-logo">
-       
-        </h1>
-      </div>
-      
       <Container>
         <Paper className={classes.paperContainer}>
           <Typography

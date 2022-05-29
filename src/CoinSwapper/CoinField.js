@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(1),
     minHeight: "80px",
-    backgroundColor: COLORS.grey[50],
+    backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[300],
     borderWidth: "1px",
@@ -17,10 +17,10 @@ const useStyles = makeStyles((theme) => ({
   container_input: {
     padding: theme.spacing(1),
     minHeight: "68px",
-    backgroundColor: COLORS.grey[50],
+    backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
-    borderColor: COLORS.grey[300],
-    borderWidth: "1px",
+    borderColor: COLORS.grey[200],
+    borderWidth: "5px",
     borderStyle: "solid",
     marginLeft: "50%",
     textAlign: "right",
