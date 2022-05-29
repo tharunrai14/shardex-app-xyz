@@ -8,15 +8,13 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav><img src={Image} alt='logo'/>
-        <div className="Title">
-          <h1 className="navbar-logo">
-           
-          </h1>
-        </div>
-
-        <div className="NavbarItems">
+      <nav >
+        <img src={Image} alt='logo'/>
+        
+        <div className="NavbarItes">
           <ul className={`nav-menu`}>
+
+            <p><p></p></p><p></p>
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>

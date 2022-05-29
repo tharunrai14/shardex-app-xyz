@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
     title: "Swap",
-    url: "/Alternative-Uniswap-Interface/",
+    url: "/Shardex/",
     cName: "nav-links",
   },
   {
     title: "Liquidity",
-    url: "/Alternative-Uniswap-Interface/liquidity",
+    url: "/Shardex/liquidity",
     cName: "nav-links",
   },
 ];
