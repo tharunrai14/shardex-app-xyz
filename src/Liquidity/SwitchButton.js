@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonGroup, Button } from "@material-ui/core";
-
+import '../font.css';
+import './switch.css';
 export default function SwitchButton(props) {
   const { setDeploy } = props;
 
@@ -22,7 +23,7 @@ export default function SwitchButton(props) {
 
   return (
     <div>
-      <ButtonGroup size="large" variant="contained">
+      <ButtonGroup size="small" variant="contained">
         <Button
           id="add-button"
           color="primary"
@@ -32,7 +33,7 @@ export default function SwitchButton(props) {
             changeStyles(true);
           }}
         >
-          Deploy Liquidity
+         <p> Add </p>
         </Button>
 
         <Button
@@ -44,7 +45,7 @@ export default function SwitchButton(props) {
             changeStyles(false);
           }}
         >
-          Remove Liquidity
+         <p> Remove </p>
         </Button>
       </ButtonGroup>
     </div>

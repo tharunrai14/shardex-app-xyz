@@ -16,10 +16,11 @@ import CoinButton from "./CoinButton";
 import { doesTokenExist } from "../ethereumFunctions";
 import PropTypes from "prop-types";
 import * as COLORS from "@material-ui/core/colors";
-
+import '../CoinSwapper/dialog.css';
 const styles = (theme) => ({
   dialogContainer: {
     borderRadius: theme.spacing(2),
+    color:COLORS.grey[900],
   },
   titleSection: {
     padding: theme.spacing(2),
@@ -43,8 +44,10 @@ const styles = (theme) => ({
     paddingLeft: theme.spacing(0.5),
     paddingRight: theme.spacing(0.5),
     paddingTop: theme.spacing(2),
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(0),
     overflow: "hidden",
+    borderRadius:"2rem",
+    
   },
 });
 
@@ -124,20 +127,20 @@ export default function CoinDialog(props) {
   };
 
   return (
-    <Dialog
+    <Dialog id="dbody"
       open={open}
       onClose={() => exit(undefined)}
       fullWidth
       maxWidth="sm"
       classes={{ paper: classes.dialogContainer }}
     >
-      <DialogTitle onClose={() => exit(undefined)}>Select Coin</DialogTitle>
+      <DialogTitle onClose={() => exit(undefined)}><p id='Select'>Select Coin</p></DialogTitle>
 
-      <hr className={classes.hr} />
+      
 
-      <div className={classes.coinContainer}>
+      <div id="coincontainer" >
         <Grid container direction="column" spacing={1} alignContent="center">
-          <TextField
+          <TextField id="textfield"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             variant="outlined"
@@ -148,14 +151,13 @@ export default function CoinDialog(props) {
             className={classes.address}
           />
 
-          <hr className={classes.hr} />
 
           <Grid item className={classes.coinList}>
             <Grid container direction="column">
               {/* Maps all of the tokens in the constants file to buttons */}
               {coins.map((coin, index) => (
                 <Grid item key={index} xs={12}>
-                  <CoinButton
+                  <CoinButton id="coins"
                     coinName={coin.name}
                     coinAbbr={coin.abbr}
                     onClick={() => exit(coin.address)}
@@ -169,9 +171,9 @@ export default function CoinDialog(props) {
 
       <hr className={classes.hr} />
 
-      <DialogActions>
-        <Button autoFocus   onClick={submit} color="primary">
-          Import Coin
+      <DialogActions id='importbdialog'>
+        <Button  id='importb'autoFocus   onClick={submit} color="primary">
+          Import Coin 
         </Button>
       </DialogActions>
     </Dialog>

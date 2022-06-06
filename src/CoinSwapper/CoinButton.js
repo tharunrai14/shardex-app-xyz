@@ -2,15 +2,14 @@ import React from "react";
 import { ButtonBase, Grid, makeStyles, Typography } from "@material-ui/core";
 import PropTypes from "prop-types";
 import * as COLORS from "@material-ui/core/colors";
-
+import '../font.css'
+import './coinbutton.css'
 const useStyles = makeStyles((theme) => ({
   button: {
     width: "100%",
     paddingTop: theme.spacing(0.5),
     paddingBottom: theme.spacing(0.5),
-    "&:hover, &$focusVisible": {
-      backgroundColor: COLORS.lightBlue[50],
-    },
+   
   },
   coinName: {
     opacity: 0.6,
@@ -28,11 +27,11 @@ export default function CoinButton(props) {
   const classes = useStyles();
 
   return (
-    <ButtonBase focusRipple className={classes.button} onClick={onClick}>
+    <ButtonBase id="button" focusRipple className={classes.button} onClick={onClick}>
       <Grid container direction="column">
-        <Typography variant="h6">{coinAbbr}</Typography>
+        <p>{coinAbbr}</p>
         <Typography variant="body2" className={classes.coinName}>
-          {coinName}
+          <p>{coinName}</p>
         </Typography>
       </Grid>
     </ButtonBase>

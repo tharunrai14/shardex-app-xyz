@@ -29,12 +29,19 @@ import LoadingButton from "../Components/LoadingButton";
 import WrongNetwork from "../Components/wrongNetwork";
 import COINS from "../constants/coins";
 import * as chains from "../constants/chains";
-
+import * as COLORS from "@material-ui/core/colors";
+import './swapper.css';
+/*import { Colors } from "react-native/Libraries/NewAppScreen";
+*/
 const styles = (theme) => ({
   paperContainer: {
-    borderRadius: theme.spacing(2),
+    color:COLORS.grey[900],
+    margin:"50PX",
+     marginTop: "40px",
+    borderRadius: theme.spacing(5),
     padding: theme.spacing(1),
     paddingBottom: theme.spacing(3),
+    
   },
   switchButton: {
     zIndex: 1,
@@ -115,7 +122,7 @@ function CoinSwapper(props) {
   // Turns the account's balance into something nice and readable
   const formatBalance = (balance, symbol) => {
     if (balance && symbol)
-      return parseFloat(balance).toPrecision(8) + " " + symbol;
+      return parseFloat(balance).toPrecision(3) + " " + symbol;
     else return "0.0";
   };
 
@@ -330,8 +337,8 @@ function CoinSwapper(props) {
         />
 
       {/* Coin Swapper */}
-      <Container maxWidth="xs">
-        <Paper className={classes.paperContainer}>
+      <Container  maxWidth="xs">
+        <Paper class="Container"  className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
           
           </Typography>
@@ -341,11 +348,13 @@ function CoinSwapper(props) {
               <CoinField
                 activeField={true}
                 value={field1Value}
+                
                 onClick={() => setDialog1Open(true)}
                 onChange={handleChange.field1}
                 symbol={coin1.symbol !== undefined ? coin1.symbol : "Select"}
               />
-            </Grid>
+            </Grid> <p id='bal1'> Balance {formatBalance(coin1.balance,coin1.symbol)}
+   </p>
 
             <IconButton onClick={switchFields} className={classes.switchButton}>
               <SwapVerticalCircleIcon fontSize="medium" />
@@ -359,25 +368,13 @@ function CoinSwapper(props) {
                 symbol={coin2.symbol !== undefined ? coin2.symbol : "Select"}
               />
             </Grid>
+           <p id='bal2'> Balance {formatBalance(coin2.balance , coin2.symbol)}
+</p>
+            
 
-            <hr className={classes.hr} />
+          
 
-            {/* Balance Display */}
-            <Typography variant="h6">Your Balances</Typography>
-            <Grid container direction="row" justifyContent="space-between">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(coin1.balance, coin1.symbol)}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(coin2.balance, coin2.symbol)}
-                </Typography>
-              </Grid>
-            </Grid>
-
-            <hr className={classes.hr} />
+            
 
             {/* Reserves Display */}
             <Typography variant="h6">Reserves</Typography>

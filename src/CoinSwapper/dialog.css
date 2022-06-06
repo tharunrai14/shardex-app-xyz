@@ -1,0 +1,56 @@
+#dbody{
+
+}
+
+#coincontainer{
+    padding-left: 2;
+    padding-right: 2;
+    padding-top: .7rem;
+    margin-top: 0;
+        overflow: hidden ;
+  
+   
+}
+
+#importb{
+    display: inline-block;
+    position: relative;
+width: 100%;
+font-family: 'Satoshi', sans-serif;
+height:100%;
+margin: 0;
+}/*
+#importb :hover{
+    background-color: black;
+    color: aliceblue;
+  
+}
+#importbdialog{
+    display: inline-block;
+    position: relative;
+width: 100%;
+font-family: 'Satoshi', sans-serif;
+height:100%;
+margin: 0;
+
+}*/
+#importbdialog :hover{
+    background-color: black;
+    color: aliceblue;
+  
+}
+
+#textfield{
+    font-family: 'Satoshi', sans-serif;
+    text-align: center;
+   
+    
+}
+#Select{
+    position: relative;
+    align-content: center;
+}
+#coins{
+padding: 1rem;
+
+}

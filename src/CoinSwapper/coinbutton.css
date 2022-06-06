@@ -1,0 +1,12 @@
+#button :hover{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    
+}
+#button{
+    position: relative;
+    height: 100%;
+    border-radius: 5px;
+    padding-top: 2px;
+}

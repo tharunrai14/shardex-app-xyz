@@ -32,11 +32,11 @@ const App = () => {
             render={(network) => (
               <div>
                 <NarBar />
-                <Route exact path="/Shardex/Swap">
+                <Route exact path="/Swap">
                   <CoinSwapper network={network} />
                 </Route>
 
-                <Route exact path="/Shardex/Liquidity">
+                <Route exact path="/Liquidity">
                   <Liquidity network={network} />
                 </Route>
               </div>
@@ -48,5 +48,5 @@ const App = () => {
   );
 };
 
-<p>drhsrhrthrthdrthrhdrhfgnfgyjdfgdrtj</p>
+
 export default App;

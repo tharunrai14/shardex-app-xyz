@@ -7,6 +7,7 @@ import * as COLORS from "@material-ui/core/colors";
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(1),
+    
     minHeight: "80px",
     backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
@@ -94,10 +95,10 @@ export function RemoveLiquidityField1(props) {
             classes={{
               root: classes.container_input,
               input: classes.inputBase,
-            }}
+            }} 
+            
           />
         </Grid>
-        {/* </div> */}
       </Grid>
     </div>
   );

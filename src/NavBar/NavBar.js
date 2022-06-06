@@ -13,17 +13,9 @@ class NavBar extends Component {
         
         <div className="NavbarItes">
           <ul className={`nav-menu`}>
-
-            <p><p></p></p><p></p>
-            {MenuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link className={"nav-links"} to={item.url}>
-                    {item.title}
-                  </Link>
-                </li>
-              );
-            })}
+           
+            <li> <Link to={'/Swap'} >Swap</Link> </li>
+            <li> <Link to={'/Liquidity'} >Pool</Link> </li>
           </ul>
         </div>
       </nav>

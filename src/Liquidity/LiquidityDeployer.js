@@ -6,7 +6,8 @@ import {
   getBalanceAndSymbol,
   getReserves,
 } from "../ethereumFunctions";
-
+import '../font.css';
+import './liquiditydeployer.css';
 import { addLiquidity, quoteAddLiquidity } from "./LiquidityFunctions";
 
 import CoinField from "../CoinSwapper/CoinField";
@@ -15,15 +16,15 @@ import LoadingButton from "../Components/LoadingButton";
 import WrongNetwork from "../Components/wrongNetwork";
 
 const styles = (theme) => ({
-  paperContainer: {
+ /* paperContainer: {
     borderRadius: theme.spacing(2),
     padding: theme.spacing(2),
     paddingBottom: theme.spacing(3),
     width: "40%",
     overflow: "wrap",
-    background: "linear-gradient(45deg, #ff0000 30%, #FF8E53 90%)",
+    background: "#f0f0f0",
     color: "white",
-  },
+  },*/
   fullWidth: {
     width: "100%",
   },
@@ -114,7 +115,7 @@ function LiquidityDeployer(props) {
   // Turns the account's balance into something nice and readable
   const formatBalance = (balance, symbol) => {
     if (balance && symbol)
-      return parseFloat(balance).toPrecision(8) + " " + symbol;
+      return parseFloat(balance).toPrecision(4) + " " + symbol;
     else return "0.0";
   };
 
@@ -339,7 +340,7 @@ function LiquidityDeployer(props) {
   });
 
   return (
-    <div>
+    <div id="box">
       {/* Liquidity deployer */}
       <Typography variant="h5" className={classes.title}></Typography>
 
@@ -367,17 +368,18 @@ function LiquidityDeployer(props) {
             value={field1Value}
             onClick={() => setDialog1Open(true)}
             onChange={handleChange.field1}
-            symbol={coin1.symbol !== undefined ? coin1.symbol : "Select"}
+            symbol={coin1.symbol !== undefined ? coin1.symbol : <span>Select</span>}
           />
         </Grid>
-
+        <p id='bal1'> Balance {formatBalance(coin1.balance,coin1.symbol)}
+   </p>
         <Grid item xs={12} className={classes.fullWidth}>
           <CoinField
             activeField={true}
             value={field2Value}
             onClick={() => setDialog2Open(true)}
             onChange={handleChange.field2}
-            symbol={coin2.symbol !== undefined ? coin2.symbol : "Select"}
+            symbol={coin2.symbol !== undefined ? coin2.symbol : <span>Select</span>}
           />
         </Grid>
       </Grid>
@@ -389,8 +391,12 @@ function LiquidityDeployer(props) {
         justifyContent="center"
         spacing={4}
         className={classes.balance}
-      >
+      >   <p id='bal2'> Balance {formatBalance(coin2.balance,coin2.symbol)}
+      </p>
+      
         <hr className={classes.hr} />
+
+        
         <Grid
           container
           item
@@ -398,23 +404,8 @@ function LiquidityDeployer(props) {
           direction="column"
           alignItems="center"
           spacing={2}
-        >
-          {/* Balance Display */}
-          <Typography variant="h6">Your Balances</Typography>
-          <Grid container direction="row" justifyContent="space-between">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatBalance(coin1.balance, coin1.symbol)}
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatBalance(coin2.balance, coin2.symbol)}
-              </Typography>
-            </Grid>
-          </Grid>
-
-          <hr className={classes.hr} />
+        ><p>Liquidty Pool Balance{formatReserve(liquidityTokens, "UNI-V2")}</p>
+         
 
           {/* Reserves Display */}
           <Typography variant="h6">Reserves</Typography>
@@ -433,17 +424,10 @@ function LiquidityDeployer(props) {
 
           <hr className={classes.hr} />
 
-          {/* Liquidity Tokens Display */}
-          <Typography variant="h6">Your Liquidity Pool Tokens</Typography>
-          <Grid container direction="row" justifyContent="center">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(liquidityTokens, "UNI-V2")}
-              </Typography>
-            </Grid>
-          </Grid>
+         
         </Grid>
-        <Paper className={classes.paperContainer}>
+        
+        <Paper  id="paper1">
           {/*Red  Display to show the quote */}
           <Grid
             container
@@ -475,7 +459,7 @@ function LiquidityDeployer(props) {
             <Grid container direction="row" justifyContent="center">
               <Grid item xs={6}>
                 <Typography variant="body1" className={classes.balance}>
-                  {formatReserve(liquidityOut[2], "UNI-V2")}
+                  {formatReserve(liquidityOut[2], <span>SDX V1</span>)}
                 </Typography>
               </Grid>
             </Grid>

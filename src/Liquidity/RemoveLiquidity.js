@@ -14,7 +14,7 @@ import {
 import CoinDialog from "../CoinSwapper/CoinDialog";
 import LoadingButton from "../Components/LoadingButton";
 import WrongNetwork from "../Components/wrongNetwork";
-
+import '../font.css'
 const styles = (theme) => ({
   paperContainer: {
     borderRadius: theme.spacing(2),
@@ -345,7 +345,7 @@ function LiquidityRemover(props) {
             value={field1Value}
             onClick={() => setDialog1Open(true)}
             onChange={handleChange.field1}
-            symbol={coin1.symbol !== undefined ? coin1.symbol : "Select"}
+            symbol={coin1.symbol !== undefined ? coin1.symbol : <span>Select</span>}
           />
         </Grid>
 
@@ -353,7 +353,7 @@ function LiquidityRemover(props) {
           <RemoveLiquidityField2
             activeField={true}
             onClick={() => setDialog2Open(true)}
-            symbol={coin2.symbol !== undefined ? coin2.symbol : "Select"}
+            symbol={coin2.symbol !== undefined ? coin2.symbol :<span>Select</span> }
           />
         </Grid>
       </Grid>

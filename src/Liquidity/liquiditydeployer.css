@@ -1,0 +1,10 @@
+#box{
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    
+}
+#paper1{
+    clear: left;
+    background-color: rgb(199, 113, 0);
+    color: blanchedalmond;
+}

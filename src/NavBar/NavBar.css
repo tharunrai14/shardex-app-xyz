@@ -86,26 +86,24 @@
 
 ul {
   list-style-type: none;
-  height: max-content;
-  margin: 0%;
-  
-  padding: 0%;
-  display: inline;
-  position:relative;
-  right: -45%;
-  overflow:hidden;
-  width:min-content;
+ padding: 0;
+  position:absolute;
+  bottom: 15%;
+ margin-left: 25%;
+width: max-content;
   background-color: #f3eaeaa7;
-  border-radius: 20px;
-  border-color: rgb(223, 43, 43);
+  border-radius: 2rem;
+  font-family: 'Satoshi', sans-serif;
   font-size: large;
+  display: block;
+  size: 30%;
 }
 
 li {
-  float: left;
-  
+ position: relative;
+ display: inline-block;
   text-decoration: none;
- 
+ border-radius: 5em;
 }
 
 li a {
@@ -113,12 +111,23 @@ li a {
   display: block;
   color: rgb(24, 24, 24);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
-  right: 50px;
+ 
   border-radius: 5px;
   height: max-content;
-padding-bottom: 50%;
+
+}
+li a:active{
+  display: block;
+  color: rgb(24, 24, 24);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+ 
+  border-radius: 5px;
+  height: max-content;
+
 }
 
 
