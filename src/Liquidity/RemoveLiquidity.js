@@ -14,9 +14,10 @@ import {
 import CoinDialog from "../CoinSwapper/CoinDialog";
 import LoadingButton from "../Components/LoadingButton";
 import WrongNetwork from "../Components/wrongNetwork";
-import '../font.css'
+import '../font.css';
+import './rml.css';
 const styles = (theme) => ({
-  paperContainer: {
+  /*paperContainer: {
     borderRadius: theme.spacing(2),
     padding: theme.spacing(2),
     paddingBottom: theme.spacing(3),
@@ -24,7 +25,7 @@ const styles = (theme) => ({
     overflow: "wrap",
     background: "linear-gradient(45deg, #ff0000 30%, #FF8E53 90%)",
     color: "white",
-  },
+  },*/
   fullWidth: {
     width: "100%",
   },
@@ -107,13 +108,13 @@ function LiquidityRemover(props) {
   // Turns the account's balance into something nice and readable
   const formatBalance = (balance, symbol) => {
     if (balance && symbol)
-      return parseFloat(balance).toPrecision(8) + " " + symbol;
+      return parseFloat(balance).toPrecision(4) + " " + symbol;
     else return "0.0";
   };
 
   // Turns the coin's reserves into something nice and readable
   const formatReserve = (reserve, symbol) => {
-    if (reserve && symbol) return reserve + " " + symbol;
+    if (reserve && symbol) return parseFloat(reserve).toPrecision(4) + " " + symbol;
     else return "0.0";
   };
 
@@ -317,9 +318,9 @@ function LiquidityRemover(props) {
   });
 
   return (
-    <div>
+    <div id="box">
       {/* Coin Swapper */}
-      <Typography variant="h5" className={classes.title}></Typography>
+      
 
       {/* Dialog Windows */}
       <CoinDialog
@@ -375,89 +376,16 @@ function LiquidityRemover(props) {
           alignItems="center"
           spacing={2}
         >
-          {/* Balance Display */}
-          <Typography variant="h6">Your Balances</Typography>
-          <Grid container direction="row" justifyContent="space-between">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatBalance(coin1.balance, coin1.symbol)}
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatBalance(coin2.balance, coin2.symbol)}
-              </Typography>
-            </Grid>
-          </Grid>
 
-          <hr className={classes.hr} />
-
-          {/* Reserves Display */}
-          <Typography variant="h6">Reserves</Typography>
-          <Grid container direction="row" justifyContent="space-between">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(reserves[0], coin1.symbol)}
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(reserves[1], coin2.symbol)}
-              </Typography>
-            </Grid>
-          </Grid>
-
-          <hr className={classes.hr} />
-
-          {/* Liquidity Tokens Display */}
-          <Typography variant="h6">Your Liquidity Pool Tokens</Typography>
-          <Grid container direction="row" justifyContent="center">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(liquidityTokens, "UNI-V2")}
-              </Typography>
-            </Grid>
-          </Grid>
         </Grid>
-
-        <Paper className={classes.paperContainer}>
-          {/*Red  Display to show the quote */}
-          <Grid
-            container
-            item
-            direction="column"
-            alignItems="center"
-            spacing={2}
-            className={classes.fullWidth}
-          >
-            {/* Tokens in */}
-            <Typography variant="h6">Liquidity Pool Tokens in</Typography>
-            <Grid container direction="row" justifyContent="center">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(tokensOut[0], "UNI-V2")}
-                </Typography>
-              </Grid>
-            </Grid>
-
-            <hr className={classes.hr} />
-
-            {/* Liquidity Tokens Display */}
-            <Typography variant="h6">Tokens Out</Typography>
-            <Grid container direction="row" justifyContent="space-between">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(tokensOut[1], coin1.symbol)}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(tokensOut[2], coin2.symbol)}
-                </Typography>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Paper>
+        <p id="lbal2">LP Token Balance  : {formatReserve(liquidityTokens, "SHXLP")}</p>
+        <p id="res1">Res1 {formatReserve(reserves[0], coin1.symbol)} </p>
+        <p id="res2">Res 2{formatReserve(reserves[1], coin2.symbol)} </p>
+        <p id="rem">  Pool Tokens Removing  :   {formatBalance(tokensOut[0], "UNI-V2")}</p>
+        <p id="head">Tokens Out</p>
+        <p id="out1">{formatBalance(tokensOut[1], coin1.symbol)}</p>
+        <p id="out2">{formatBalance(tokensOut[2], coin2.symbol)}</p>
+        
         <hr className={classes.hr} />
       </Grid>
 

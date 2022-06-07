@@ -124,7 +124,7 @@ function LiquidityDeployer(props) {
 
   // Turns the coin's reserves into something nice and readable
   const formatReserve = (reserve, symbol) => {
-    if (reserve && symbol) return reserve + " " + symbol;
+    if (reserve && symbol) return parseFloat(reserve).toPrecision(3)+ " " + symbol;
     else return "0.0";
   };
 
@@ -425,7 +425,7 @@ function LiquidityDeployer(props) {
         
       <p id="tadd1">Tokens1 to Add  {formatBalance(liquidityOut[0], coin1.symbol)} </p>
        <p id="tadd2">tokens2 to add {formatBalance(liquidityOut[1], coin2.symbol)}</p>
-       <p id="ltget">Liquidity tokens to get   {formatReserve(liquidityOut[2], )}</p>
+       <p id="ltget">Liquidity tokens In  :  {formatReserve(liquidityOut[2],"SHX Lp" )}</p>
        
         
 

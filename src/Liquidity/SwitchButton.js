@@ -8,16 +8,20 @@ export default function SwitchButton(props) {
   const changeStyles = (K) => {
     if (K === true) {
       let add_button = document.getElementById("add-button");
-      add_button.style.backgroundColor = "#ff0000";
+      add_button.style.backgroundColor = "#333333";
+      add_button.style.color = "#eeeeee";
 
       let remove_button = document.getElementById("remove-button");
-      remove_button.style.backgroundColor = "#9e9e9e";
+      remove_button.style.backgroundColor = "#eeeeee";
+      remove_button.style.color = "#333333";
     } else {
       let remove_button = document.getElementById("remove-button");
-      remove_button.style.backgroundColor = "#ff0000";
+      remove_button.style.backgroundColor = "#333333";
+      remove_button.style.color = "#eeeeee";
 
       let add_button = document.getElementById("add-button");
-      add_button.style.backgroundColor = "#9e9e9e";
+      add_button.style.backgroundColor = "#eeeeee";
+      add_button.style.color = "#333333";
     }
   };
 
@@ -33,7 +37,7 @@ export default function SwitchButton(props) {
             changeStyles(true);
           }}
         >
-         <p> Add </p>
+         <p> Add<span>  <span></span></span> </p>
         </Button>
 
         <Button

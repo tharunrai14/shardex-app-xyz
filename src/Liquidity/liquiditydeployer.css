@@ -13,22 +13,23 @@
 }
 #lbal{
     position:absolute;
-    left: 60px;
-    margin: 10px;
-    top:200px;
+    left: 70px;
+    top:160px;
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 #heading{
     position: absolute;
     left: 35%;
     top:250px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #c1res{
     position:absolute;
     left: 40px;
     margin: 20px;
     top:260px;
+    margin-top: 20px;
 }
 
 #c2res{
