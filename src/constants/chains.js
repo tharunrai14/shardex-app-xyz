@@ -8,7 +8,7 @@ export const ChainId = {
 }
 
 export const routerAddress = new Map();
- routerAddress.set(ChainId.MAINNET, "0xdc1bc88bf88ac25be118d705c78ebf5d8c45914d");
+ routerAddress.set(ChainId.MAINNET, "0xbbf7478b8be6166e099578976cb9eb702eca11ea");
 
 routerAddress.set(ChainId.RINKEBY, "0x14e4DAe87990FC8947718f7ac0317CdD9b58CD08");
 
