@@ -1,15 +1,12 @@
 body {
-  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(31, 33, 39) 100%);
-  color: #ffffff;
+ background-color: black;
+  color: #ececec;
 position: relative;
-width: 100%;
- padding-left: 10%;
-padding-right: 10%;
-height: 80%;
+
   font-size: 15px;
   font-weight: normal;
 
-  line-height: 1rem;
+
   margin: 0;
 }
 
@@ -20,7 +17,7 @@ height: 80%;
 .container {
   width: 80%;
   margin: auto;
-  border: 5px #333333 solid;
+  border: 5px #362bc9 solid;
   padding: 10px;
   border-radius: 25px;
 }
@@ -74,4 +71,8 @@ height: 80%;
 
 .logo{
   padding-left: 1rem;
+}
+.App{
+  background-color: #030303;
+  
 }

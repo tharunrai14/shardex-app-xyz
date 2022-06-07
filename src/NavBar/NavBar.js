@@ -8,13 +8,13 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav >
+      <nav id="navbar" >
         <img src={Image} alt='logo'/>
         
         <div className="NavbarItes">
           <ul className={`nav-menu`}>
            
-            <li> <Link to={'/Swap'} >Swap</Link> </li>
+            <li> <Link to={'/'} >Swap</Link> </li>
             <li> <Link to={'/Liquidity'} >Pool</Link> </li>
           </ul>
         </div>

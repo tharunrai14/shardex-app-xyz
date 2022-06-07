@@ -26,7 +26,7 @@ const theme = createTheme({
   },
 });
 
-const autoReconnectDelay = 5000;
+const autoReconnectDelay = 100;
 
 const Web3Provider = (props) => {
   const [isConnected, setConnected] = useState(true);
@@ -54,7 +54,7 @@ const Web3Provider = (props) => {
         network.chainID = chainId;
         if (chains.networks.includes(chainId)) {
           // Get the router using the chainID
-          network.router = await getRouter(
+          network.router =  getRouter(
             chains.routerAddress.get(chainId),
             network.signer
           );
@@ -103,7 +103,7 @@ const Web3Provider = (props) => {
         setConnected(false);
         await setupConnection();
       }
-    }, 1000);
+    }, 100);
   }
 
   useEffect(async () => {
@@ -134,8 +134,8 @@ const Web3Provider = (props) => {
 
   return (
     <>
-      {isConnected && renderNotConnected()}
-      {!isConnected && <div> {props.render(network)}</div>}
+      {!isConnected && renderNotConnected()}
+      {isConnected && <div> {props.render(network)}</div>}
     </>
   );
 };

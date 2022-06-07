@@ -3,16 +3,16 @@ import { Fab, Grid, InputBase, makeStyles } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import PropTypes from "prop-types";
 import * as COLORS from "@material-ui/core/colors";
-
+import './cf.css';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(1),
     
-    minHeight: "80px",
-    backgroundColor: COLORS.grey[200],
+    minHeight: "90px",
+    backgroundColor: COLORS.grey[700],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[300],
-    borderWidth: "1px",
+    borderWidth: "02px",
     borderStyle: "solid",
   },
   container_input: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[200],
-    borderWidth: "5px",
+    borderWidth: "1px",
     borderStyle: "solid",
     marginLeft: "50%",
     textAlign: "right",
@@ -36,6 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
   fab: {
     zIndex: "0",
+    backgroundColor:COLORS.grey[200],
+    
   },
   input: {
     ...theme.typography.h5,
@@ -66,7 +68,7 @@ export function RemoveLiquidityField1(props) {
   const { onClick, symbol, value, onChange, activeField } = props;
   return (
     <div className={classes.container_blank}>
-      <Grid
+      <Grid 
         container
         direction="row"
         justifyContent="space-between"
@@ -75,7 +77,7 @@ export function RemoveLiquidityField1(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-          <Fab
+          <Fab id="selectbutton"
             size="small"
             variant="extended"
             onClick={onClick}
@@ -176,7 +178,7 @@ export default function CoinField(props) {
 
         {/* Text Field */}
         <Grid item xs={9}>
-          <InputBase
+          <InputBase 
             value={value}
             onChange={onChange}
             placeholder="0.0"

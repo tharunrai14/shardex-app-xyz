@@ -357,7 +357,7 @@ function CoinSwapper(props) {
    </p>
 
             <IconButton onClick={switchFields} className={classes.switchButton}>
-              <SwapVerticalCircleIcon fontSize="medium" />
+              <SwapVerticalCircleIcon id='sicon' fontSize="medium" />
             </IconButton>
 
             <Grid item xs={12} className={classes.fullWidth}>
@@ -370,30 +370,9 @@ function CoinSwapper(props) {
             </Grid>
            <p id='bal2'> Balance {formatBalance(coin2.balance , coin2.symbol)}
 </p>
-            
 
-          
 
-            
-
-            {/* Reserves Display */}
-            <Typography variant="h6">Reserves</Typography>
-            <Grid container direction="row" justifyContent="space-between">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatReserve(reserves[0], coin1.symbol)}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatReserve(reserves[1], coin2.symbol)}
-                </Typography>
-              </Grid>
-            </Grid>
-
-            <hr className={classes.hr} />
-
-            <LoadingButton
+            <LoadingButton id='lbt'
               loading={loading}
               valid={isButtonEnabled()}
               success={false}
