@@ -81,8 +81,47 @@
   transition: all 0.4s ease-out;
   background-color: #bc2323;
 }*/
-@media screen and (max-width: 768px) {
+
+
+ul{
+  position:absolute;
+  bottom: 9%;
+  padding: 0;
+margin-left: 45%;
+ width: max-content;
+  background-color: #f3eaeaa7;
+  border-radius: 2rem;
+  font-family: 'Satoshi', sans-serif;
+  font-size: large;
+  display: block;
+  size: 30%;
 }
+li {
+  position: relative;
+  display: inline-block;
+   text-decoration: none;
+  border-radius: 5rem;
+ }
+ 
+ li a {
+   
+   display: block;
+   color: rgb(24, 24, 24);
+   text-align: center;
+   padding: 14px;
+   text-decoration: none;
+  
+   border-radius: 5px;
+   height: max-content;
+ 
+ }
+ li a:hover {
+  background-color: rgb(255, 241, 241);
+  color: black;
+}
+
+@media screen and (max-width:420px) {
+
 
 ul {
   list-style-type: none;
@@ -134,6 +173,7 @@ li a:active{
 li a:hover {
   background-color: rgb(255, 241, 241);
   color: black;
+}
 }
 #bspan{
 position: absolute;
