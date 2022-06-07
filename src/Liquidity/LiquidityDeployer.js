@@ -16,7 +16,7 @@ import LoadingButton from "../Components/LoadingButton";
 import WrongNetwork from "../Components/wrongNetwork";
 
 const styles = (theme) => ({
- /* paperContainer: {
+ /*paperContainer: {
     borderRadius: theme.spacing(2),
     padding: theme.spacing(2),
     paddingBottom: theme.spacing(3),
@@ -26,7 +26,7 @@ const styles = (theme) => ({
     color: "white",
   },*/
   fullWidth: {
-    width: "100%",
+    width: "80%",
   },
   values: {
     width: "50%",
@@ -404,69 +404,29 @@ function LiquidityDeployer(props) {
           direction="column"
           alignItems="center"
           spacing={2}
-        ><p>Liquidty Pool Balance{formatReserve(liquidityTokens, "UNI-V2")}</p>
+        >
+          {/*Reserves display*/ }
+          <p id ="lbal">Your Liquidty Pool Balance  :    {formatReserve(liquidityTokens, "UNI-V2")}</p>
+         <h5 id="heading">Pair Reserves </h5>
+         <span id="c1res">{formatReserve(reserves[0], coin1.symbol)}</span>
+         <span id="c2res">{formatReserve(reserves[1], coin2.symbol)}</span>
+
+         
+         
          
 
-          {/* Reserves Display */}
-          <Typography variant="h6">Reserves</Typography>
-          <Grid container direction="row" justifyContent="space-between">
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(reserves[0], coin1.symbol)}
-              </Typography>
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant="body1" className={classes.balance}>
-                {formatReserve(reserves[1], coin2.symbol)}
-              </Typography>
-            </Grid>
-          </Grid>
-
-          <hr className={classes.hr} />
+        
 
          
         </Grid>
         
-        <Paper  id="paper1">
-          {/*Red  Display to show the quote */}
-          <Grid
-            container
-            item
-            direction="column"
-            alignItems="center"
-            spacing={2}
-            className={classes.fullWidth}
-          >
-            {/* Tokens in */}
-            <Typography variant="h6">Tokens in</Typography>
-            <Grid container direction="row" justifyContent="space-between">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(liquidityOut[0], coin1.symbol)}
-                </Typography>
-              </Grid>
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatBalance(liquidityOut[1], coin2.symbol)}
-                </Typography>
-              </Grid>
-            </Grid>
+      <p id="tadd1">Tokens1 to Add  {formatBalance(liquidityOut[0], coin1.symbol)} </p>
+       <p id="tadd2">tokens2 to add {formatBalance(liquidityOut[1], coin2.symbol)}</p>
+       <p id="ltget">Liq tokens to get   {formatReserve(liquidityOut[2], )}</p>
+       
+        
 
-            <hr className={classes.hr} />
-
-            {/* Liquidity Tokens Display */}
-            <Typography variant="h6">Liquidity Pool Tokens Out</Typography>
-            <Grid container direction="row" justifyContent="center">
-              <Grid item xs={6}>
-                <Typography variant="body1" className={classes.balance}>
-                  {formatReserve(liquidityOut[2], <span>SDX V1</span>)}
-                </Typography>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Paper>
-
-        <hr className={classes.hr} />
+     
       </Grid>
       <Grid container direction="column" alignItems="center" spacing={2}>
         <LoadingButton
@@ -477,7 +437,7 @@ function LiquidityDeployer(props) {
           onClick={deploy}
         >
           <AccountBalanceIcon className={classes.buttonIcon} />
-          Deploy
+          Provide
         </LoadingButton>
       </Grid>
     </div>

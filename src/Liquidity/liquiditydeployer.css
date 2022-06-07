@@ -1,10 +1,59 @@
 #box{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(252, 251, 251);
     position: relative;
+    width:100%;
+    color: rgb(0, 0, 0);
     
 }
 #paper1{
     clear: left;
     background-color: rgb(199, 113, 0);
-    color: blanchedalmond;
+    color: rgb(195, 133, 40);
+}
+#lbal{
+    position:absolute;
+    left: 10px;
+    margin: 10px;
+    top:200px
+}
+#heading{
+    position: absolute;
+    left: 35%;
+    top:250px
+}
+#c1res{
+    position:absolute;
+    left: 40px;
+    margin: 10px;
+    top:260px;
+}
+
+#c2res{
+    position:absolute;
+    left: 40px;
+    margin: 10px;
+    top:260px;
+    padding-left: 14rem;
+}
+
+#tadd1{
+    position:absolute;
+    left: 60px;
+    margin: 10px;
+    top: 300px;
+    display: none;
+}
+
+#tadd2{
+    position:absolute;
+    left: 60px;
+    margin: 10px;
+    top: 320px;
+    display: none;
+}
+
+#ltget{
+position: absolute;
+left: 20px;
+top: 300px;
 }

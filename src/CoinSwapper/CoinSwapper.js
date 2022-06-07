@@ -36,11 +36,11 @@ import './swapper.css';
 const styles = (theme) => ({
   paperContainer: {
     color:COLORS.grey[900],
-    margin:"50PX",
+    margin:"10PX",
      marginTop: "40px",
     borderRadius: theme.spacing(5),
     padding: theme.spacing(1),
-    paddingBottom: theme.spacing(3),
+    paddingBottom: theme.spacing(1),
     
   },
   switchButton: {

@@ -7,17 +7,17 @@ import './cf.css';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(1),
-    
-    minHeight: "90px",
+    width:"100%",
+    minHeight: "60px",
     backgroundColor: COLORS.grey[700],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[300],
-    borderWidth: "02px",
+    borderWidth: "2px",
     borderStyle: "solid",
   },
   container_input: {
     padding: theme.spacing(1),
-    minHeight: "68px",
+    minHeight: "60px",
     backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[200],
@@ -32,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: theme.spacing(2),
   },
   grid: {
-    height: "60px",
+    height: "40px",
   },
   fab: {
     zIndex: "0",
-    backgroundColor:COLORS.grey[200],
+    
     
   },
   input: {
