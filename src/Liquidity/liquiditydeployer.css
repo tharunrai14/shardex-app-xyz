@@ -1,9 +1,10 @@
 #box{
-    background-color: rgb(252, 251, 251);
+    background-color: #333333;
     position: relative;
     width:100%;
-    color: rgb(0, 0, 0);
-    
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 0;
 }
 #paper1{
     clear: left;
@@ -12,26 +13,28 @@
 }
 #lbal{
     position:absolute;
-    left: 10px;
+    left: 60px;
     margin: 10px;
-    top:200px
+    top:200px;
+    margin-bottom: 40px;
 }
 #heading{
     position: absolute;
     left: 35%;
-    top:250px
+    top:250px;
+    margin-bottom: 20px;
 }
 #c1res{
     position:absolute;
     left: 40px;
-    margin: 10px;
+    margin: 20px;
     top:260px;
 }
 
 #c2res{
     position:absolute;
     left: 40px;
-    margin: 10px;
+    margin: 20px;
     top:260px;
     padding-left: 14rem;
 }
@@ -54,6 +57,18 @@
 
 #ltget{
 position: absolute;
-left: 20px;
-top: 300px;
+left: 100px;
+top: 320px;
+margin-bottom: 50px;
+}
+#p{
+    color: rgb(0, 0, 0);
+   
+}
+#b{
+    color: rgb(3, 3, 3);
+    background-color: #EEEEEE;
+}
+#hrr{
+    margin-top: 30px;
 }

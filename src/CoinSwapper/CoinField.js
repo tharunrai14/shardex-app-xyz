@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "60px",
     backgroundColor: COLORS.grey[200],
     borderRadius: theme.spacing(2),
-    borderColor: COLORS.grey[200],
+    borderColor: COLORS.grey[900],
     borderWidth: "1px",
     borderStyle: "solid",
     marginLeft: "50%",

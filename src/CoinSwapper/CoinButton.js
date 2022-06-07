@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
 CoinButton.propTypes = {
   coinName: PropTypes.string.isRequired,
   coinAbbr: PropTypes.string.isRequired,
+ 
   onClick: PropTypes.func.isRequired,
 };
 

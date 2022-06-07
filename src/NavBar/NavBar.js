@@ -16,7 +16,7 @@ class NavBar extends Component {
            
             <li> <Link to={'/'} >Swap</Link> </li>
             <li> <Link to={'/Liquidity'} >Pool</Link> </li>
-          </ul><span id="bspan"><span id="s1"><a>Exchange</a></span> <span id="s2"><a>History</a></span> <span id="s3"><a>Farms</a></span> </span>
+          </ul><span id="bspan"><span id="s1"><a href="/">Exchange</a></span> <span id="s2"><a>History</a></span> <span id="s3"><a>Farms</a></span> </span>
         </div>
       </nav> 
     );

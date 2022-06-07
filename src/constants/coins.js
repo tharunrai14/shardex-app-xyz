@@ -5,6 +5,7 @@ const MAINNETCoins = [
   {
     name: "Ether",
     abbr: "ETH",
+
     address: "", // Weth address is fetched from the router
   },
   {

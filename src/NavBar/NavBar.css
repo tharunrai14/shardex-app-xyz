@@ -128,7 +128,7 @@ ul {
  padding: 0;
   position:absolute;
   bottom: 9%;
- margin-left: 35%;
+ margin-left: 30%;
 width: max-content;
   background-color: #f3eaeaa7;
   border-radius: 2rem;
@@ -180,16 +180,17 @@ position: absolute;
 display: inline-block;
 right: 50px;
 top:20px;
-
+text-decoration: none;
 }
-#s1{
+#s1 a{
 padding-right: 20px;
-text-decoration: none ;
-
+text-decoration: none;
+text-decoration-color: none;
+color: #eeeeee;
 }
 #s1 :hover{
   text-decoration: dashed underline 2px ;
-  text-transform: capitalize;
+  
 }
 #s2{
   padding-right: 20px;

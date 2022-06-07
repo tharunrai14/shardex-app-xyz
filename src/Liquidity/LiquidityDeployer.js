@@ -26,18 +26,20 @@ const styles = (theme) => ({
     color: "white",
   },*/
   fullWidth: {
-    width: "80%",
+    width: "100%",
   },
   values: {
     width: "50%",
   },
   title: {
     textAlign: "center",
-    padding: theme.spacing(0.5),
+    padding: theme.spacing(0.1),
     marginBottom: theme.spacing(1),
   },
   hr: {
     width: "100%",
+    marginBottom:"20px",
+    
   },
   balance: {
     padding: theme.spacing(1),
@@ -45,8 +47,9 @@ const styles = (theme) => ({
     textAlign: "center",
   },
   buttonIcon: {
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(2),
     padding: theme.spacing(0.4),
+    
   },
 });
 
@@ -393,7 +396,7 @@ function LiquidityDeployer(props) {
         className={classes.balance}
       >   <p id='bal2'> Balance {formatBalance(coin2.balance,coin2.symbol)}
       </p>
-      
+      <hr id="hrr"></hr>
         <hr className={classes.hr} />
 
         
@@ -422,14 +425,31 @@ function LiquidityDeployer(props) {
         
       <p id="tadd1">Tokens1 to Add  {formatBalance(liquidityOut[0], coin1.symbol)} </p>
        <p id="tadd2">tokens2 to add {formatBalance(liquidityOut[1], coin2.symbol)}</p>
-       <p id="ltget">Liq tokens to get   {formatReserve(liquidityOut[2], )}</p>
+       <p id="ltget">Liquidity tokens to get   {formatReserve(liquidityOut[2], )}</p>
        
         
 
      
       </Grid>
       <Grid container direction="column" alignItems="center" spacing={2}>
-        <LoadingButton
+       
+       
+       
+       
+       <p></p>
+
+
+
+
+
+
+       <p><p><p></p></p><p><p></p></p></p><p>
+
+
+
+<hr></hr>
+       </p>
+        <LoadingButton id="b"
           loading={loading}
           valid={isButtonEnabled()}
           success={false}
@@ -437,7 +457,7 @@ function LiquidityDeployer(props) {
           onClick={deploy}
         >
           <AccountBalanceIcon className={classes.buttonIcon} />
-          Provide
+         <span id='p'>Provide</span> 
         </LoadingButton>
       </Grid>
     </div>
