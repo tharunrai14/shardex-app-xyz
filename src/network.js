@@ -134,8 +134,8 @@ const Web3Provider = (props) => {
 
   return (
     <>
-      {isConnected && renderNotConnected()}
-      {!isConnected && <div> {props.render(network)}</div>}
+      {!isConnected && renderNotConnected()}
+      {isConnected && <div> {props.render(network)}</div>}
     </>
   );
 };
