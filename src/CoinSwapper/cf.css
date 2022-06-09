@@ -1,5 +1,19 @@
-#selectbutton{
-    color: aliceblue;
-    background-color: aqua;
+.selectbutton{
+    color: rgb(237, 237, 237);
+    background-color: rgb(13, 13, 13);
+ 
+    border-radius: 10px ;
+    border: 1px solid black;
+  padding: 4px;
     
+ 
+      
+}
+
+.inputf{
+    color: rgb(14, 14, 14);
+   
+    
+
+
 }

@@ -15,10 +15,11 @@ font-size: small;
     text-decoration: solid underline;
 }
 .Container{
-margin: 20px;
+margin: 0px;
 margin-Top: 40px;
-background-color: #333333;
-color: rgb(255, 255, 255);
+background-color: #E3F6F5;
+border: solid 2px ;
+color: rgb(0, 0, 0);
 border-radius: 1.5rem;
 padding: 1rem;
 padding-bottom: 2rem;
@@ -27,13 +28,97 @@ padding-bottom: 2rem;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 5px;
+    
 }
-#lbt{
-    color: black;
-    background-color: whitesmoke;
-   
+/*
+#lbt  {
+    color: #000000;
+    background-color: #F7F7F7;
+    font-family: 'Satoshi-Medium', sans-serif;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    
+    
+}*/
+/*
+#bdiv{
+    position: absolute;
+    bottom: 200px;
+
 }
-#lbt :hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(4, 4, 4);
+#bdiv :hover{
+    background-color: aquamarine;
+}*/
+#bdiv {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(44, 44, 44);
+    cursor: pointer;
+    position: absolute;
+    bottom:200px;
+    z-index: 0;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: #F9F9F9;
+    
 }
+
+#bdiv:before {
+    content: '';
+    background: linear-gradient(45deg, #ff7300, #fffb00, #48ff00, #00ffd5, #7a00ff, #ff00c8);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#bdiv:active {
+    color: #000
+}
+
+#bdiv:active:after {
+    background: transparent;
+}
+
+#bdiv:hover:before {
+    opacity: 1;
+}
+
+#bdiv:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#bspan1{
+    font-family: 'Satoshi-Medium', sans-serif;
+    position: absolute;
+   left: 50px;
+   bottom: 13px;
+    
+}
+

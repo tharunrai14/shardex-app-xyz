@@ -32,6 +32,11 @@
 */
 .logo {
   width: 230px;
+ 
+}
+img{
+  padding-left: 10px;
+  padding-top: 2px;
 }
 /*
 .nav-menu {
@@ -120,15 +125,16 @@ li {
   color: black;
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:460px) {
 
 
 ul {
+  
   list-style-type: none;
  padding: 0;
   position:absolute;
   bottom: 9%;
- margin-left: 30%;
+ margin-left: 35%;
 width: max-content;
   background-color: #f3eaeaa7;
   border-radius: 2rem;
@@ -178,8 +184,8 @@ li a:hover {
 #bspan{
 position: absolute;
 display: inline-block;
-right: 50px;
-top:20px;
+right: 10px;
+top:14px;
 text-decoration: none;
 }
 #s1 a{

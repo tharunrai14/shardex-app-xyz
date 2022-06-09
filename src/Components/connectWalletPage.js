@@ -8,7 +8,8 @@ import {
   Paper,
   Typography,
 } from "@material-ui/core";
-import "./cw.css"
+import "./cw.css";
+import "../font.css";
 import { grey } from '@mui/material/colors';
 
 
@@ -20,7 +21,7 @@ const styles = (theme) => ({
     paddingBottom: theme.spacing(3),
     maxWidth: 400,
     margin: "auto",
-    marginTop: "200px",
+    marginTop: "400px",
     textAlign:"CenterFocusStrong"
      },
   fullWidth: {
@@ -56,8 +57,8 @@ function ConnectWalletPage() {
   return (
     <div >  <img src={logo} alt="Logo" />
      
-      <Container>
-        <Paper className={classes.paperContainer}>
+      <Container >
+        <Paper id="paperr" className={classes.paperContainer}>
           <Typography
           
             variant="body1"
@@ -65,7 +66,7 @@ function ConnectWalletPage() {
             className={classes.title}
             
           >
-            <h3> Connect to MetaMask To Use Shardex&nbsp; </h3>
+            <span id="bold"> Connect to Your Web3 Wallet &nbsp; </span>
 
 
 
@@ -74,8 +75,15 @@ function ConnectWalletPage() {
           font-size='2rem'
           
           
-          ><h9>Make Sure You Are Conected to Shardeum Liberty</h9>
+          ><p>Make Sure You Are Conected to Shardeum Liberty
+
+
+
+          </p>
+
+          <p><button id="docsb" href="">Shardeum Docs</button></p>
           &nbsp;</Typography>
+         <span id="smalltxt">Try <span><a  href="#">Refreshing</a></span> Page If you are connected</span> 
         </Paper>
       </Container>
 

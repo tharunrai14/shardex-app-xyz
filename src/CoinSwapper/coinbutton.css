@@ -1,6 +1,6 @@
 #button :hover{
     background-color: black;
-    color: rgb(255, 255, 255);
+    color: rgb(243, 241, 241);
     text-align: center;
     
 }
@@ -9,4 +9,5 @@
     height: 100%;
     border-radius: 5px;
     padding-top: 2px;
+    
 }

@@ -1,0 +1,27 @@
+#docsb{
+ position: relative;
+ bottom: -20px;
+ left:120px;
+ background-color: black;
+ color: #fff;
+ border: 2px solid white;
+}
+
+#paperr{
+    background-color: #E3F6F5;
+    position: relative;
+    bottom: 200px;
+    border: 5px solid rgb(150, 139, 139);
+}
+
+#smalltxt{
+    font-size: 10px;
+    position: relative;
+    left: 90px;
+}
+a{
+    text-decoration: none;
+    border-bottom:1px dashed black ;
+    text-decoration-color: black;
+
+}

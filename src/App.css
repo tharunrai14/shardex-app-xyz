@@ -1,6 +1,8 @@
 body {
- background-color: black;
-  color: #ececec;
+  background-color: #323333;
+  background-image: linear-gradient(315deg, #222c3c 100%, #12100e 50%);
+ 
+  color: #fdfcfc;
 position: relative;
 
   font-size: 15px;
@@ -34,7 +36,7 @@ position: relative;
   padding: 20px;
 }
 
-.myform input[type="text"],
+.myform input[type="number"],
 .myform textarea {
   padding: 8px;
   width: 100%;
@@ -73,6 +75,11 @@ position: relative;
   padding-left: 1rem;
 }
 .App{
-  background-color: #030303;
-  
+ 
+  background-color: #323333;
+  background-image: linear-gradient(315deg, #222c3c 0%, #12100e 74%);
+  position: relative;
+ height: 500%;
+
+
 }

@@ -4,6 +4,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import PropTypes from "prop-types";
 import * as COLORS from "@material-ui/core/colors";
 import './cf.css';
+import '../font.css';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(1),
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
     marginLeft: "50%",
     textAlign: "right",
+    color:"black"
   },
   container_blank: {
     padding: theme.spacing(1),
@@ -34,11 +36,9 @@ const useStyles = makeStyles((theme) => ({
   grid: {
     height: "40px",
   },
-  fab: {
-    zIndex: "0",
+ 
     
-    
-  },
+  
   input: {
     ...theme.typography.h5,
     width: "100%",
@@ -77,7 +77,7 @@ export function RemoveLiquidityField1(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-          <Fab id="selectbutton"
+         <Fab class="selectbutton"
             size="small"
             variant="extended"
             onClick={onClick}
@@ -89,7 +89,7 @@ export function RemoveLiquidityField1(props) {
         </Grid>
         {/* Text Field */}
         <Grid item xs={9}>
-          <InputBase
+          <InputBase  class="inputf"
             value={value}
             onChange={onChange}
             placeholder="0.0"
@@ -128,15 +128,15 @@ export function RemoveLiquidityField2(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-          <Fab
+          <button class="selectbutton"
             size="small"
             variant="extended"
             onClick={onClick}
-            className={classes.fab}
+            className={classes.button}
           >
             {symbol}
             <ExpandMoreIcon />
-          </Fab>
+          </button>
         </Grid>
       </Grid>
     </div>
@@ -165,20 +165,21 @@ export default function CoinField(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-          <Fab
+          <button class="selectbutton"
             size="small"
             variant="extended"
             onClick={onClick}
-            className={classes.fab}
+            className={classes.button}
           >
             {symbol}
             <ExpandMoreIcon />
-          </Fab>
+          </button>
         </Grid>
 
         {/* Text Field */}
         <Grid item xs={9}>
-          <InputBase 
+          <InputBase class="inputf"
+          type="number" 
             value={value}
             onChange={onChange}
             placeholder="0.0"

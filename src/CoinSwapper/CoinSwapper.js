@@ -33,6 +33,7 @@ import * as COLORS from "@material-ui/core/colors";
 import './swapper.css';
 /*import { Colors } from "react-native/Libraries/NewAppScreen";
 */
+
 const styles = (theme) => ({
   paperContainer: {
     color:COLORS.grey[900],
@@ -192,6 +193,8 @@ function CoinSwapper(props) {
     }
   };
 
+
+
   // Calls the swapTokens Ethereum function to make the swap, then resets nessicary state variables
   const swap = () => {
     console.log("Attempting to swap tokens...");
@@ -337,6 +340,7 @@ function CoinSwapper(props) {
         />
 
       {/* Coin Swapper */}
+      
       <Container  maxWidth="xs">
         <Paper class="Container"  className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
@@ -372,16 +376,19 @@ function CoinSwapper(props) {
 </p>
 
 
-            <LoadingButton id='lbt'
-              loading={loading}
-              valid={isButtonEnabled()}
-              success={false}
-              fail={false}
-              onClick={swap}
+            <div  id="bdiv"
+            
+            loading={loading}
+            valid={isButtonEnabled()}
+            success={false}
+            fail={false}
+            onClick={swap}  
+           
             >
-              <LoopIcon />
-              Approve And Swap
-            </LoadingButton>
+             <span id='bspan1'> Approve  And  Swap</span>
+          
+           
+           </div>
           </Grid>
         </Paper>
       </Container>

@@ -134,7 +134,7 @@ export default function CoinDialog(props) {
       maxWidth="sm"
       classes={{ paper: classes.dialogContainer }}
     >
-      <DialogTitle onClose={() => exit(undefined)}><p id='Select'>Select Coin</p></DialogTitle>
+      <DialogTitle onClose={() => exit(undefined)}><p id='Selectc'>Select Coin</p></DialogTitle>
 
       
 
@@ -167,15 +167,12 @@ export default function CoinDialog(props) {
             </Grid>
           </Grid>
         </Grid>
-      </div>
-
-      <hr className={classes.hr} />
-
+      
       <DialogActions id='importbdialog'>
         <Button  id='importb'autoFocus   onClick={submit} color="primary">
           Import Coin 
         </Button>
-      </DialogActions>
+      </DialogActions></div>
     </Dialog>
   );
 }
