@@ -8,7 +8,8 @@
 }
 
 #paperr{
-    background-color: #e8eafd;
+    background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
     position: relative;
     bottom: 200px;
     border: 5px solid rgb(150, 139, 139);

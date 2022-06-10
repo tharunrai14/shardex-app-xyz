@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   container_input: {
     padding: theme.spacing(1),
     minHeight: "60px",
-    backgroundColor: COLORS.grey[200],
+    backgroundColor: COLORS.grey[100],
     borderRadius: theme.spacing(2),
     borderColor: COLORS.grey[900],
     borderWidth: "1px",

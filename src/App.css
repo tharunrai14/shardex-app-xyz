@@ -2,7 +2,7 @@ body {
   background-color: #323333;
   background-image: linear-gradient(315deg, #222c3c 100%, #12100e 50%);
  
-  color: #ffffff;
+  color: #020202;
 position: relative;
 
   font-size: 15px;
@@ -75,10 +75,9 @@ position: relative;
   padding-left: 1rem;
 }
 .App{
- 
-  background-color: #323333;
-  background-image: linear-gradient(315deg, #222c3c 0%, #12100e 74%);
-  position: relative;
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+  position: relative; 
   height: max-content;
 
 

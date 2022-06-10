@@ -17,9 +17,13 @@ font-size: small;
 .Container{
 margin: 0px;
 margin-Top: 90px;
-background-color: #e8eafd;
+
+
+background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+box-shadow:  6px #00ffd5;
 border: solid  3px ;
-border-color: #362bc9;
+border-color: #000000;
 color: rgb(0, 0, 0);
 border-radius: 1.5rem;
 padding: 1rem;
