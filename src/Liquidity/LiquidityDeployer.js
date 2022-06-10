@@ -343,9 +343,8 @@ function LiquidityDeployer(props) {
   });
 
   return (
+    
     <div id="box">
-      {/* Liquidity deployer */}
-      <Typography variant="h5" className={classes.title}></Typography>
 
       {/* Dialog Windows */}
       <CoinDialog

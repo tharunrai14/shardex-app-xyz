@@ -16,9 +16,10 @@ font-size: small;
 }
 .Container{
 margin: 0px;
-margin-Top: 40px;
+margin-Top: 90px;
 background-color: #E3F6F5;
 border: solid 2px ;
+border-color: #84893e;
 color: rgb(0, 0, 0);
 border-radius: 1.5rem;
 padding: 1rem;

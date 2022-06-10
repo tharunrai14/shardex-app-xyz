@@ -31,12 +31,13 @@ import COINS from "../constants/coins";
 import * as chains from "../constants/chains";
 import * as COLORS from "@material-ui/core/colors";
 import './swapper.css';
+import "../font.css";
 /*import { Colors } from "react-native/Libraries/NewAppScreen";
 */
 
 const styles = (theme) => ({
   paperContainer: {
-    color:COLORS.grey[900],
+    color:COLORS.grey[200],
     margin:"10PX",
      marginTop: "40px",
     borderRadius: theme.spacing(5),
@@ -352,7 +353,7 @@ function CoinSwapper(props) {
               <CoinField
                 activeField={true}
                 value={field1Value}
-                
+               
                 onClick={() => setDialog1Open(true)}
                 onChange={handleChange.field1}
                 symbol={coin1.symbol !== undefined ? coin1.symbol : "Select"}
@@ -365,7 +366,7 @@ function CoinSwapper(props) {
             </IconButton>
 
             <Grid item xs={12} className={classes.fullWidth}>
-              <CoinField
+              <CoinField 
                 activeField={false}
                 value={field2Value}
                 onClick={() => setDialog2Open(true)}

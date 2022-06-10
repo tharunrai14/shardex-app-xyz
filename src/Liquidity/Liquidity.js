@@ -10,7 +10,7 @@ import {
 import SwitchButton from "./SwitchButton";
 import LiquidityDeployer from "./LiquidityDeployer";
 import LiquidityRemover from "./RemoveLiquidity";
-
+import "./l.css";
 const styles = (theme) => ({
   paperContainer: {
     borderRadius: theme.spacing(2),
@@ -47,7 +47,7 @@ function Liquidity(props) {
   return (
     <div>
       <Container>
-        <Paper className={classes.paperContainer}>
+        <Paper id="paper" className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
             <SwitchButton setDeploy={setDeploy} />
           </Typography>

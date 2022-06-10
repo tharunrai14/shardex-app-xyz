@@ -8,7 +8,7 @@ import { Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import { createTheme, ThemeProvider } from "@material-ui/core";
-
+import "./font.css";
 
 const theme = createTheme({
   palette: {
@@ -25,6 +25,11 @@ const theme = createTheme({
 
 const App = () => {
   return (
+
+
+
+
+    
     <div className="App">
       <SnackbarProvider maxSnack={3}>
         <ThemeProvider theme={theme}>
@@ -45,7 +50,14 @@ const App = () => {
           ></Web3Provider>
         </ThemeProvider>
       </SnackbarProvider>
-    </div>
+
+      <div>
+ <span id='stickyb'>This App is Under Heavy Development... Have Fun Testing </span>
+ </div>
+      </div>
+
+
+      
   );
 };
 

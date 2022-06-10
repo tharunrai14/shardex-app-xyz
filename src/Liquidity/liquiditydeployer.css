@@ -1,10 +1,13 @@
 #box{
-    background-color: #333333;
+    background-color: #E3F6F5;
     position: relative;
     width:100%;
-    color: rgb(255, 255, 255);
+    color: rgb(4, 4, 4);
     border-radius: 4px;
     padding: 0;
+    margin-top: 20px;
+    margin: 0;
+    border: none;
 }
 #paper1{
     clear: left;

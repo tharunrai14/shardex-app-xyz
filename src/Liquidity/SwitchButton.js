@@ -26,8 +26,8 @@ export default function SwitchButton(props) {
   };
 
   return (
-    <div>
-      <ButtonGroup size="small" variant="contained">
+    <div id="bgrp">
+      <ButtonGroup size="small" variant="contained" >
         <Button
           id="add-button"
           color="primary"
