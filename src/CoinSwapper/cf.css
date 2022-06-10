@@ -3,15 +3,20 @@
     background-color: rgb(13, 13, 13);
  
     border-radius: 10px ;
-    border: 1px solid black;
-  padding: 4px;
+    border: 1px solid rgb(131, 127, 127);
+  padding: 6px;
     
- 
+ width: 100px;
       
 }
 
+.selectbutton :hover{
+  background-color: rgb(0, 0, 0);
+
+  
+}
 .inputf{
-    color: rgb(14, 14, 14);
+    color: rgb(14, 13, 13);
    
     
 

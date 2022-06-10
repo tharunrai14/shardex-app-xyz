@@ -9,6 +9,7 @@ import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./font.css";
+import { TabScrollButton } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -52,7 +53,8 @@ const App = () => {
       </SnackbarProvider>
 
       <div>
- <span id='stickyb'>This App is Under Heavy Development... Have Fun Testing </span>
+ <span id='stickyb'>Shardex v1.0 :This App is Currently Under Heavy Development... Have Fun Testing </span>
+ 
  </div>
       </div>
 

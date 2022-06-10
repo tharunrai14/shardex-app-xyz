@@ -397,8 +397,9 @@ function LiquidityRemover(props) {
           fail={false}
           onClick={remove}
         >
-          <ArrowDownwardIcon className={classes.buttonIcon} />
-          Remove
+         
+          <button> Remove</button>
+         
         </LoadingButton>
       </Grid>
     </div>

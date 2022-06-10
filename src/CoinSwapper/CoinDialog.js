@@ -57,7 +57,7 @@ const useStyles = makeStyles(styles);
 const DialogTitle = withStyles(styles)((props) => {
   const { children, classes, onClose, ...other } = props;
   return (
-    <MuiDialogTitle
+    <MuiDialogTitle id="muidialog"
       disableTypography
       className={classes.titleSection}
       {...other}
