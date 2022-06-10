@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../logowt80.svg';
+import logo from './logobt.svg';
 import {
   AppBar,
   Container,

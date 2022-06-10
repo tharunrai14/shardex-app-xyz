@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 import "./NavBar.css";
 import { NavLink } from 'react-router-dom';
-import  Image  from "../logowt80.svg";
+import Image  from "./logobt.svg";
 import menui from "./menu.svg";
 class NavBar extends Component {
   state = { clicked: false };
