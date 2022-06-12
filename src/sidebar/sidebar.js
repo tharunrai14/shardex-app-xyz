@@ -1,20 +1,35 @@
 import "./sb.css";
-return(
-<div id="mySidenav" class="sidenav">
-<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Clients</a>
-<a href="#">Contact</a>
-</div>
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
-function  openNav ()  {
-document.getElementById("mySidenav").style.width = "20px";
-}
+function Sidebar() {
+    const [sidebar, setSidebar] = useState(false);
+    const showSidebar = () => setSidebar(!sidebar);
+    return (
+      <nav className={sidebar ? "sidebar active" : "sidebar"}>
+       <MenuOpenIcon  fontSize="large" className="hamburger" type="button" onClick={showSidebar}>
+          
+        </MenuOpenIcon>
+        
+        <ul onClick={showSidebar}>
+        
+        
+        </ul>
 
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-}
-<span style="font-size:30px;cursor:pointer" onclick={openNav}">&#9776; open</span>
-)
-export default sidebar;
+        <span id="bspan">
+         <li><span id="s1">
+                <a href="/">Exchange</a>
+                </span></li>    
+    
+          <li><span id="s2">
+                    <a>History</a></span></li>
+                     <li><span id="s3"><a>Farms</a>
+                     </span> </li>
+        </span>
+        <p>gjgjkg</p>
+      </nav>
+    );
+  }
+  
+  export default Sidebar;

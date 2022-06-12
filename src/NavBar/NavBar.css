@@ -192,52 +192,12 @@ li a:hover {
   height: max-content;
 }
 }
-#bspan{
-position: absolute;
-display: inline-block;
-right: 10px;
-top:14px;
-text-decoration: none;
-}
-#s1 a{
-padding-right: 20px;
-text-decoration: none;
-text-decoration-color: none;
-color: #000000;
-}
-#s1 :hover{
-  text-decoration: dashed underline 2px ;
-  
-}
-#s2{
-  padding-right: 20px;
-  text-decoration: none ;
-  
 
-}
-#s2 :hover{
-  text-decoration: dashed underline 2px ;
-  text-transform: capitalize;
-}
-#s3{
-  padding-right: 20px;
-  text-decoration: none ;
-  
-
-}
-#s3 :hover{
-  text-decoration: dashed underline 2px ;
-  text-transform: capitalize;
-}
-
-#micon{
-  position: absolute;
-  left: 0;
-  top: 15px;
- 
-}
 img{
   padding-left: 35px;
   padding-top: 2px;
+  position: relative;
+  left: 20px;
+  top: -5px;
 }
 
