@@ -27,7 +27,7 @@ function Sidebar() {
                      <li><span id="s3"><a>Farms</a>
                      </span> </li>
         </span>
-        <p>gjgjkg</p>
+          
       </nav>
     );
   }
