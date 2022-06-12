@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 import { useSnackbar } from "notistack";
 import {
   getBalanceAndSymbol,
@@ -108,13 +108,13 @@ function LiquidityRemover(props) {
   // Turns the account's balance into something nice and readable
   const formatBalance = (balance, symbol) => {
     if (balance && symbol)
-      return parseFloat(balance).toPrecision(4) + " " + symbol;
+      return parseFloat(balance).toPrecision(2) + " " + symbol;
     else return "0.0";
   };
 
   // Turns the coin's reserves into something nice and readable
   const formatReserve = (reserve, symbol) => {
-    if (reserve && symbol) return parseFloat(reserve).toPrecision(4) + " " + symbol;
+    if (reserve && symbol) return parseFloat(reserve).toPrecision(2) + " " + symbol;
     else return "0.0";
   };
 
@@ -312,7 +312,7 @@ function LiquidityRemover(props) {
           }
         );
       }
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(coinTimeout);
   });
@@ -339,7 +339,7 @@ function LiquidityRemover(props) {
         open={wrongNetworkOpen}
       />
 
-      <Grid container direction="column" alignItems="center" spacing={2}>
+      <Grid container direction="row"  spacing={2}>
         <Grid item xs={12} className={classes.fullWidth}>
           <RemoveLiquidityField1
             activeField={true}
@@ -351,8 +351,9 @@ function LiquidityRemover(props) {
         </Grid>
 
         <Grid item xs={12} className={classes.fullWidth}>
-          <RemoveLiquidityField2
+          <RemoveLiquidityField2 id="field2"
             activeField={true}
+            
             onClick={() => setDialog2Open(true)}
             symbol={coin2.symbol !== undefined ? coin2.symbol :<span>Select</span> }
           />
@@ -376,31 +377,34 @@ function LiquidityRemover(props) {
           alignItems="center"
           spacing={2}
         >
+          <p id="titlee">Choose Your Token Pair</p>
 
         </Grid>
-        <p id="lbal2">LP Token Balance  : {formatReserve(liquidityTokens, "SHXLP")}</p>
+        <p id="lbal2"> Balance  : {formatReserve(liquidityTokens, "SHXLP")}</p>
         <p id="res1">Res1 {formatReserve(reserves[0], coin1.symbol)} </p>
         <p id="res2">Res 2{formatReserve(reserves[1], coin2.symbol)} </p>
         <p id="rem">  Pool Tokens Removing  :   {formatBalance(tokensOut[0], "UNI-V2")}</p>
-        <p id="head">Tokens Out</p>
+       <div id="toutd"> <p id="head">Tokens Out</p>
         <p id="out1">{formatBalance(tokensOut[1], coin1.symbol)}</p>
         <p id="out2">{formatBalance(tokensOut[2], coin2.symbol)}</p>
-        
-        <hr className={classes.hr} />
+        </div>
+        <hr  />
       </Grid>
 
       <Grid container direction="column" alignItems="center" spacing={2}>
-        <LoadingButton
-          loading={loading}
-          valid={isButtonEnabled()}
-          success={false}
-          fail={false}
-          onClick={remove}
-        >
+        
          
-          <button id='rmbutton'> Remove</button>
+          <button id='rmbutton'
+             
+             valid={isButtonEnabled()}
+             success={false}
+             fail={false}
+             onClick={remove}
+             > <RemoveCircleIcon id="rmicon"/> <LoadingButton loading={loading} id="lbttn"
+          
+             /> <span id="rmtext">Remove</span></button>
          
-        </LoadingButton>
+        
       </Grid>
     </div>
   );

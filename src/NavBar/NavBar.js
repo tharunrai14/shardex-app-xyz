@@ -4,16 +4,23 @@ import { MenuItems } from "./MenuItems";
 import "./NavBar.css";
 import { NavLink } from 'react-router-dom';
 import Image  from "./logobt.svg";
-import menui from "./menu.svg";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 class NavBar extends Component {
   state = { clicked: false };
 
   render() {
     return (
+
       
+     
+    
+
+     
       <nav id="navbar" >
-        <div id='wrapper'><img id="menui" src={menui}/></div>
+        
         <img src={Image} alt='logo'/>
+        <div  id="micon"> <MenuOpenIcon /></div>
+       
      
         <div className="NavbarItes">
           <ul className={`nav-menu`}>

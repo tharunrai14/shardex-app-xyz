@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Grid, makeStyles, Paper, Typography } from "@material-ui/core";
-import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
+import ControlPointRoundedIcon from '@mui/icons-material/ControlPointRounded';
 import { useSnackbar } from "notistack";
 import {
   getBalanceAndSymbol,
@@ -34,7 +34,7 @@ const styles = (theme) => ({
   title: {
     textAlign: "center",
     padding: theme.spacing(0.1),
-    marginBottom: theme.spacing(1),
+    marginBottom: theme.spacing(.1),
   },
   hr: {
     width: "100%",
@@ -337,7 +337,7 @@ function LiquidityDeployer(props) {
           }
         );
       }
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(coinTimeout);
   });
@@ -410,11 +410,17 @@ function LiquidityDeployer(props) {
           {/*Reserves display*/ }
           <p id ="lbal">Your Liquidty Pool Balance  :    {formatReserve(liquidityTokens, "SHXlp")}</p>
          
-         
+         <div id="rcontainer">
+
          <h5 id="heading">Pair Reserves </h5>
          <span id="c1res">{formatReserve(reserves[0], coin1.symbol)}</span>
          <span id="c2res">{formatReserve(reserves[1], coin2.symbol)}</span>
 
+
+
+
+         </div>
+         
          
          
          
@@ -461,7 +467,7 @@ function LiquidityDeployer(props) {
           fail={false}
           onClick={deploy}
         >
-          <AccountBalanceIcon className={classes.buttonIcon} />
+          <ControlPointRoundedIcon className={classes.buttonIcon} />
          <span id='p'>Provide</span> 
         </LoadingButton>
     </div>

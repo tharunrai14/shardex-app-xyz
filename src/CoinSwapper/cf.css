@@ -16,9 +16,52 @@
   
 }
 .inputf{
-    color: rgb(14, 13, 13);
+    color: rgb(0, 0, 0);
   
     
 
 
+}
+#inputfrb{
+  padding: 0%;
+  text-align: center;
+  font-size: medium;
+  width: 125px;
+}
+#inputfr{
+  position: absolute;
+  bottom: 175px;
+  left: 45px;
+  padding: 0;
+  
+
+}
+
+#rselectbutton{
+  color: rgb(237, 237, 237);
+    background-color: rgb(13, 13, 13);
+  
+    border-radius: 10px ;
+    border: 1px solid rgb(131, 127, 127);
+  padding: 6px;
+    
+ width: 100px;
+ position: absolute;
+ top : 30px;
+ left: 30px;
+}
+
+#rselectbutton2{
+  color: rgb(237, 237, 237);
+    background-color: rgb(13, 13, 13);
+ 
+    border-radius: 10px ;
+    border: 1px solid rgb(131, 127, 127);
+  padding: 6px;
+    
+ width: 100px;
+ position: absolute;
+ top: 28px;
+ left: 250px;
+ 
 }

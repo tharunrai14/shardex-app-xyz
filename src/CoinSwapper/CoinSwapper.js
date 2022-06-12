@@ -73,6 +73,7 @@ const styles = (theme) => ({
 
 const useStyles = makeStyles(styles);
 
+
 function CoinSwapper(props) {
   const classes = useStyles();
   const { enqueueSnackbar } = useSnackbar();
@@ -189,6 +190,8 @@ function CoinSwapper(props) {
           address: address,
           symbol: data.symbol,
           balance: data.balance,
+          
+      
         });
       });
     }
@@ -377,15 +380,18 @@ function CoinSwapper(props) {
 </p>
 
 
+   
+
+
             <div  id="bdiv"
             
-            loading={loading}
+            
             valid={isButtonEnabled()}
             success={false}
             fail={false}
             onClick={swap}  
            
-            >
+            ><LoadingButton id="albttn" loading={loading}/>
              <span id='bspan1'> Approve  And  Swap</span>
           
            

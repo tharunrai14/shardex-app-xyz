@@ -1,6 +1,6 @@
 body {
-  background-color: #323333;
-  background-image: linear-gradient(315deg, #222c3c 100%, #12100e 50%);
+  background-color: #f9c5d1;
+  background-image: linear-gradient(180deg, #f9c5d1 0%, #9795ef 74%);
  
   color: #020202;
 position: relative;
@@ -9,7 +9,7 @@ position: relative;
   font-weight: normal;
   font-family: 'Satoshi', sans-serif;
 
-  margin: 0;
+  
 }
 
 .outer {
@@ -78,7 +78,7 @@ position: relative;
   background-color: #f9c5d1;
   background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
   position: relative; 
- 
+  
 
 
 }

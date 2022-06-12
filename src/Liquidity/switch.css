@@ -1,17 +1,17 @@
 #bgrp{
    position: relative;
-   height: 40px;
-   margin-top: -20px;
+   height: 60px;
+   margin-top: -18px;
   
 }
 
 #add-button{
     height: 40px;
-
+border: 2px solid black;
 
 }
 #remove-button{
-
+    border: 2px solid black;
 
     height: 40px;
 }

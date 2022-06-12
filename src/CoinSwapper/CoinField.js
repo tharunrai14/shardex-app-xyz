@@ -10,9 +10,9 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     width:"100%",
     minHeight: "60px",
-    backgroundColor: COLORS.grey[700],
+    backgroundColor: COLORS.grey[100],
     borderRadius: theme.spacing(2),
-    borderColor: COLORS.grey[300],
+    borderColor: COLORS.grey[900],
     borderWidth: "2px",
     borderStyle: "solid",
   },
@@ -77,7 +77,7 @@ export function RemoveLiquidityField1(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-         <Fab class="selectbutton"
+         <button id="rselectbutton"
             size="small"
             variant="extended"
             onClick={onClick}
@@ -85,14 +85,15 @@ export function RemoveLiquidityField1(props) {
           >
             {symbol}
             <ExpandMoreIcon />
-          </Fab>
+          </button>
         </Grid>
         {/* Text Field */}
-        <Grid item xs={9}>
-          <InputBase  class="inputf"
+        <Grid item xs={9}  id="inputfr">
+          <InputBase id="inputfrb"
             value={value}
+            type="number"
             onChange={onChange}
-            placeholder="0.0"
+            placeholder="Enter LP Amount"
             disabled={!activeField}
             classes={{
               root: classes.container_input,
@@ -128,7 +129,7 @@ export function RemoveLiquidityField2(props) {
       >
         {/* Button */}
         <Grid item xs={3}>
-          <button class="selectbutton"
+          <button id="rselectbutton2"
             size="small"
             variant="extended"
             onClick={onClick}

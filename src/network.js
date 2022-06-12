@@ -97,7 +97,7 @@ const Web3Provider = (props) => {
          const chainID = await getNetwork(network.provider);
          if (chainID !== network.chainID){
           setConnected(false);
-           await setupConnection();
+          await setupConnection();
          }
       } catch (e) {
         setConnected(false);
