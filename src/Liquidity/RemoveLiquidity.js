@@ -398,7 +398,7 @@ function LiquidityRemover(props) {
           onClick={remove}
         >
          
-          <button> Remove</button>
+          <button id='rmbutton'> Remove</button>
          
         </LoadingButton>
       </Grid>

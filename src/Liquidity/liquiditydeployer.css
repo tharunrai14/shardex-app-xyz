@@ -6,8 +6,9 @@ background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
     color: rgb(4, 4, 4);
     border-radius: 4px;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 1px;
     margin: 0;
+    height: 320px;
     border: none;
 }
 #paper1{
@@ -73,7 +74,18 @@ margin-bottom: 50px;
 #b{
     color: rgb(3, 3, 3);
     background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 16px;
+
+  
 }
 #hrr{
     margin-top: 30px;
+    
+    
+}
+
+#hr{
+    
+    border: 5px solid black;
 }

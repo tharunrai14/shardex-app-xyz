@@ -94,11 +94,11 @@ const Web3Provider = (props) => {
         if (account != network.account) {
           await setupConnection();
         }
-        // const chainID = await getNetwork(network.provider);
-        // if (chainID !== network.chainID){
-        //   setConnected(false);
-        //   await setupConnection();
-        // }
+         const chainID = await getNetwork(network.provider);
+         if (chainID !== network.chainID){
+          setConnected(false);
+           await setupConnection();
+         }
       } catch (e) {
         setConnected(false);
         await setupConnection();
@@ -134,8 +134,8 @@ const Web3Provider = (props) => {
 
   return (
     <>
-      {!isConnected && renderNotConnected()}
-      {isConnected && <div> {props.render(network)}</div>}
+      {isConnected && renderNotConnected()}
+      {!isConnected && <div> {props.render(network)}</div>}
     </>
   );
 };

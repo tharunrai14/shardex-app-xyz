@@ -17,7 +17,7 @@ const styles = (theme) => ({
     padding: theme.spacing(1),
     paddingBottom: theme.spacing(3),
     maxWidth: 400,
-    marginTop:"40px",
+    marginTop:"30px",
     margin: "auto",
   },
   title: {

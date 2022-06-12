@@ -408,7 +408,9 @@ function LiquidityDeployer(props) {
           spacing={2}
         >
           {/*Reserves display*/ }
-          <p id ="lbal">Your Liquidty Pool Balance  :    {formatReserve(liquidityTokens, "UNI-V2")}</p>
+          <p id ="lbal">Your Liquidty Pool Balance  :    {formatReserve(liquidityTokens, "SHXlp")}</p>
+         
+         
          <h5 id="heading">Pair Reserves </h5>
          <span id="c1res">{formatReserve(reserves[0], coin1.symbol)}</span>
          <span id="c2res">{formatReserve(reserves[1], coin2.symbol)}</span>
@@ -446,9 +448,13 @@ function LiquidityDeployer(props) {
 
 
 
-<hr></hr>
+<hr ></hr>
        </p>
-        <LoadingButton id="b"
+        
+      </Grid>
+
+      <div>
+      <LoadingButton id="b"
           loading={loading}
           valid={isButtonEnabled()}
           success={false}
@@ -458,8 +464,13 @@ function LiquidityDeployer(props) {
           <AccountBalanceIcon className={classes.buttonIcon} />
          <span id='p'>Provide</span> 
         </LoadingButton>
-      </Grid>
     </div>
+
+      
+    </div>
+    
+
+   
   );
 }
 

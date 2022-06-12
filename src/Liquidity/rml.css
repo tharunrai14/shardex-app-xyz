@@ -33,3 +33,13 @@
     
     padding: 10px;
 }
+#rmbutton{
+    color: rgb(3, 3, 3);
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 16px;
+    border: 0px;
+    position: relative;
+    bottom: -90px;
+  
+}

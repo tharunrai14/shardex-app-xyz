@@ -18,7 +18,7 @@ const styles = (theme) => ({
   paperContainer: {
     borderRadius: theme.spacing(2),
     padding: theme.spacing(1),
-    paddingBottom: theme.spacing(3),
+    paddingBottom: theme.spacing(2),
     maxWidth: 400,
     margin: "auto",
     marginTop: "400px",
@@ -83,7 +83,7 @@ function ConnectWalletPage() {
 
           <p><button id="docsb" href="">Shardeum Docs</button></p>
           &nbsp;</Typography>
-         <span id="smalltxt">Try <span><a  href="#">Refreshing</a></span> Page If you are connected</span> 
+         <span id="smalltxt">Try <span><a  href="javascript:history.go(0)">Refreshing</a></span> Page If you are connected</span> 
         </Paper>
       </Container>
 

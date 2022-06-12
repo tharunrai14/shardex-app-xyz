@@ -316,7 +316,7 @@ function CoinSwapper(props) {
           }
         );
       }
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(coinTimeout);
   });
