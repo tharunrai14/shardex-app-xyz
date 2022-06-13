@@ -7,6 +7,8 @@ import Sidebar from "../sidebar/sidebar";
 import { NavLink } from 'react-router-dom';
 import Image  from "./logobt.svg";
 import App from '../App.js'
+import History from "../history/history";
+
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 class NavBar extends Component {
   state = { clicked: false };
@@ -21,14 +23,8 @@ class NavBar extends Component {
      
       <nav id="navbar" >
         
-        <img src={Image} alt='logo'/>
-        <>
-      <Router>
-        <Sidebar />
-        
-      </Router>
-    </>
-        
+        <img src={Image} onClick="javascript:history.go(0)" alt='logo'></img>
+     
        
      
         <div className="NavbarItes">

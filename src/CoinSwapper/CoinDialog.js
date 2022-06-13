@@ -160,6 +160,7 @@ export default function CoinDialog(props) {
                   <CoinButton id="coins"
                     coinName={coin.name}
                     coinAbbr={coin.abbr}
+                    coinicon={coin.icon}
                     onClick={() => exit(coin.address)}
                   />
                 </Grid>

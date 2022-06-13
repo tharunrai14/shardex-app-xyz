@@ -67,14 +67,14 @@ padding-bottom: 2rem;
     bottom:200px;
     z-index: 0;
     border-radius: 10px;
-    border: solid 2px;
+    border: solid 1px;
     border-color: #F9F9F9;
     margin-bottom:-10px ;
 }
 
 #bdiv:before {
     content: '';
-    background: linear-gradient(45deg, #ff7300, #fffb00, #48ff00, #00ffd5, #7a00ff, #ff00c8);
+    background: linear-gradient(45deg ,#5472eb, #A9FFFD,  #367fdb, #A760FF, #FF80B0);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -108,8 +108,8 @@ padding-bottom: 2rem;
     width: 100%;
     height: 100%;
     border: 2px solid black;
-    background-color: #f9c5d1;
-    background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+    background-color: #9ea6cf;
+    
     left: 0;
     top: 0;
     border-radius: 10px;

@@ -3,10 +3,10 @@ import * as chains from "./chains";
 // If you add coins for a new network, make sure Weth address (for the router you are using) is the first entry
 const MAINNETCoins = [
   {
-    name: "Ether",
-    abbr: "ETH",
-
-    address: "0xc77c720478a59a2ba135d53f3ab861c1b16efaf3", // Weth address is fetched from the router
+    name: "Shardeum",
+    abbr: "SHM",
+    iconn:"../Navbar/logobt.svg",
+    address: "", // Weth address is fetched from the router
   },
   {
     name: "Dai",
@@ -42,6 +42,7 @@ const MAINNETCoins = [
     name: "Basic Attention",
     abbr: "BAT",
     address: "0x9b17aad6261b3fb18e3bea67995392353a5c436c",
+
   },
   {
     name: "NEXO",
@@ -50,25 +51,9 @@ const MAINNETCoins = [
   },
 ];
 
-const RINKEBYCoins = [
-  {
-    name: "Ether",
-    abbr: "ETH",
-    address: "", // Weth address is fetched from the router
-  },
-  {
-    name: "Dai",
-    abbr: "tst",
-    address: "0x6D920798b601Df95B2870b7aE29F7D5082CCD1f3",
-  },
-  {
-    name: "Tether USD",
-    abbr: "USDT",
-    address: "0x3b00ef435fa4fcff5c209a37d1f3dcff37c705ad",
-  },
-];
+
 
 const COINS = new Map();
 COINS.set(chains.ChainId.MAINNET, MAINNETCoins);
-COINS.set(chains.ChainId.RINKEBY, RINKEBYCoins);
+
 export default COINS;

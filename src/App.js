@@ -1,15 +1,18 @@
 import React from "react";
 import "./App.css";
+import History from "./history/history";
 import { ethers } from "ethers";
 import Web3Provider from "./network";
 import NarBar from "./NavBar/NavBar";
 import CoinSwapper from "./CoinSwapper/CoinSwapper";
-import { Route } from "react-router-dom";
+
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import "./font.css";
 import { TabScrollButton } from "@mui/material";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Sidebar from "./sidebar/sidebar.js";
 
 const theme = createTheme({
   palette: {
@@ -32,6 +35,10 @@ const App = () => {
 
     
     <div className="App">
+
+      
+      
+        
       <SnackbarProvider maxSnack={3}>
         <ThemeProvider theme={theme}>
           <Web3Provider
@@ -41,11 +48,12 @@ const App = () => {
                 <Route exact path="/">
                   <CoinSwapper network={network} />
                 </Route>
-                
+                <Sidebar />
 
                 <Route exact path="/Liquidity">
                   <Liquidity network={network} />
                 </Route>
+                <Route path="/history" exact component={History} />
               </div>
             )}
           ></Web3Provider>

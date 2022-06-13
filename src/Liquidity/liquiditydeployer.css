@@ -73,11 +73,18 @@ margin-bottom: 60px;
 }
 #b{
     color: rgb(3, 3, 3);
-    background-color: #EEEEEE;
+    background: linear-gradient(45deg ,#5472eb, #A9FFFD,  #367fdb, #A760FF, #FF80B0);
+    border: 2px solid;
     padding: 10px;
     border-radius: 16px;
-
+    
   
+}
+
+#bd :hover{
+
+    background: linear-gradient(115deg ,#5472eb, #A9FFFD,  #367fdb, #A760FF, #FF80B0);
+    border-radius: 16px;
 }
 #hrr{
     margin-top: 30px;

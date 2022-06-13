@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
 CoinButton.propTypes = {
   coinName: PropTypes.string.isRequired,
   coinAbbr: PropTypes.string.isRequired,
- 
+ coinicon:PropTypes.any.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
 export default function CoinButton(props) {
-  const { coinName, coinAbbr, onClick, ...other } = props;
+  const { coinName, coinAbbr,coinicon, onClick, ...other } = props;
   const classes = useStyles();
 
   return (
@@ -33,7 +33,7 @@ export default function CoinButton(props) {
         <p>{coinAbbr}</p>
         <Typography variant="body2" className={classes.coinName}>
           <p>{coinName}</p>
-        </Typography>
+          <div>{coinicon}</div>        </Typography>
       </Grid>
     </ButtonBase>
   );

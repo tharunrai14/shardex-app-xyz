@@ -122,8 +122,8 @@ li {
  
  }
  li a:hover {
-  background-color: rgb(255, 241, 241);
-  color: black;
+  background-color:#000;
+  color: rgb(246, 235, 235);
   border-radius: 16px;
 }
 

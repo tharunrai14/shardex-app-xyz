@@ -13,20 +13,17 @@ function Sidebar() {
         </MenuOpenIcon>
         
         <ul onClick={showSidebar}>
-        
+        <li><Link to="/Dashboard">Dashboard</Link></li>
+        <li><Link to="/Exchange">Exchange</Link></li>
+        <li><Link to="/Farms">Pools</Link></li>
+        <li><Link to="/history">History</Link></li>
+
         
         </ul>
 
-        <span id="bspan">
-         <li><span id="s1">
-                <a href="/">Exchange</a>
-                </span></li>    
-    
-          <li><span id="s2">
-                    <a>History</a></span></li>
-                     <li><span id="s3"><a>Farms</a>
-                     </span> </li>
-        </span>
+        
+        
+        
           
       </nav>
     );
