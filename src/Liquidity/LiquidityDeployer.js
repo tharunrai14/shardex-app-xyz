@@ -130,7 +130,7 @@ function LiquidityDeployer(props) {
 
   // Determines whether the button should be enabled or not
   const isButtonEnabled = () => {
-     document.getElementById("b").style.backgroundColor="black";
+     
     // If both coins have been selected, and a valid float has been entered for both, which are less than the user's balances, then return true
     const parsedInput1 = parseFloat(field1Value);
     const parsedInput2 = parseFloat(field2Value);
