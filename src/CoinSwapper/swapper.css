@@ -14,19 +14,27 @@ font-size: small;
 #bal2 :active{
     text-decoration: solid underline;
 }
+
+#cback{
+    background: linear-gradient(45deg ,#5472eb, #A9FFFD,  #367fdb, #A760FF, #FF80B0);
+   border: transparent 4px;
+   padding: 3px;
+   border-radius: 20px;
+   position: relative;
+   margin-top: 80px;
+}
 .Container{
 margin: 0px;
-margin-Top: 90px;
+padding-top: 90px;
 
 
-background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-box-shadow:  6px #00ffd5;
-border: solid  3px ;
-border-color: #000000;
-color: rgb(0, 0, 0);
-border-radius: 1.5rem;
-padding: 1rem;
+background-color: #191919;
+border: solid  1px ;
+border-color: #6d6c6c;
+
+color: rgb(255, 255, 255);
+border-radius: 25px;
+padding: 16px;
 padding-bottom: 2rem;
 }
 #sicon{
@@ -60,11 +68,11 @@ padding-bottom: 2rem;
     height: 50px;
     border: none;
     outline: none;
-    color: #fff;
+    color: rgb(232, 226, 226);
     background: rgb(44, 44, 44);
     cursor: pointer;
     position: absolute;
-    bottom:200px;
+    bottom:-100px;
     z-index: 0;
     border-radius: 10px;
     border: solid 1px;
@@ -108,7 +116,7 @@ padding-bottom: 2rem;
     width: 100%;
     height: 100%;
     border: 2px solid black;
-    background-color: #9ea6cf;
+    background-color: #fafafa;
     
     left: 0;
     top: 0;

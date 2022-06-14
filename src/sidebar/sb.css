@@ -8,9 +8,8 @@
     height: 100%;
     border: 1px solid black;
     border-radius: 4px;
-    background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-
+    background: rgb(249,249,249);
+    background: linear-gradient(270deg, rgba(249,249,249,1) 0%, rgba(249,199,230,1) 34%, rgba(217,228,245,1) 90%);
     transition: left 300ms ease-out;
     z-index: 1;
   }

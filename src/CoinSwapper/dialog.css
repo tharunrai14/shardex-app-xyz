@@ -9,9 +9,7 @@
     padding-top: .7rem;
     margin-top: 0;
         overflow: hidden ;
-  background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-   
+  background-color: #f0f0f0;  
 }
 
 #importb{
@@ -41,10 +39,7 @@ margin: 0;
 
 #importbdialog{
 
-   background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-
-
+ background-color: #f8eeee;
 }
 #importbdialog :hover{
     background-color: black;
@@ -81,7 +76,5 @@ padding: 1rem;
 
 }
 #muidialog{
-    background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-    
+  background-color: #ffffff    
 }

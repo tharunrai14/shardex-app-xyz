@@ -49,6 +49,7 @@ const App = () => {
                   <CoinSwapper network={network} />
                 </Route>
                 <Sidebar />
+                
 
                 <Route exact path="/Liquidity">
                   <Liquidity network={network} />

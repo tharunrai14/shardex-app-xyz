@@ -41,7 +41,7 @@ const styles = (theme) => ({
     margin:"10PX",
      marginTop: "40px",
     borderRadius: theme.spacing(5),
-    padding: theme.spacing(1),
+    padding:theme.spacing(1),
     paddingBottom: theme.spacing(1),
     
   },
@@ -346,7 +346,9 @@ function CoinSwapper(props) {
       {/* Coin Swapper */}
       
       <Container  maxWidth="xs">
-        <Paper class="Container"  className={classes.paperContainer}>
+
+        <div id='cback'>
+        <Paper class="Container" elevation={9} className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
           
           </Typography>
@@ -397,7 +399,7 @@ function CoinSwapper(props) {
            
            </div>
           </Grid>
-        </Paper>
+        </Paper></div>
       </Container>
 
       <Grid

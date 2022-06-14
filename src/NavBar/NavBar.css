@@ -122,9 +122,21 @@ li {
  
  }
  li a:hover {
-  background-color:#000;
-  color: rgb(246, 235, 235);
+  background-color: rgb(255, 241, 241);
+  color: black;
   border-radius: 16px;
+  height: max-content;
+ }
+li :active{
+  display: block;
+  color: rgb(24, 24, 24);
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+ 
+  border-radius: 16px;
+  background-color: rgb(255, 241, 241);
+  height: max-content;
 }
 
 @media screen and (max-width:460px) {
@@ -138,7 +150,7 @@ ul {
   bottom: 6%;
  margin-left: 38%;
 width: max-content;
-  background-color: #f3eaeaa7;
+  background-color: #434343a7;
   border-radius: 16px;
   font-family: 'Satoshi', sans-serif;
   font-size: large;
@@ -161,7 +173,7 @@ li {
 li a {
   
   display: block;
-  color: rgb(24, 24, 24);
+  color: rgb(255, 251, 251);
   text-align: center;
   padding: 6px;
   text-decoration: none;
@@ -200,4 +212,9 @@ img{
   left: 20px;
   top: -5px;
 }
-
+#nicon{
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  
+}

@@ -8,7 +8,7 @@ function Sidebar() {
     const showSidebar = () => setSidebar(!sidebar);
     return (
       <nav className={sidebar ? "sidebar active" : "sidebar"}>
-       <MenuOpenIcon  fontSize="large" className="hamburger" type="button" onClick={showSidebar}>
+       <MenuOpenIcon fontSize="large" className="hamburger" type="button" onClick={showSidebar}>
           
         </MenuOpenIcon>
         
