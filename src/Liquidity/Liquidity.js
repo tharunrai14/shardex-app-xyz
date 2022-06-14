@@ -46,7 +46,7 @@ function Liquidity(props) {
 
   return (
     <div>
-      <Container>
+      <Container >
         <Paper id="paper" className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
             <SwitchButton setDeploy={setDeploy} />
@@ -54,7 +54,7 @@ function Liquidity(props) {
 
           {deploy_or_remove(deploy)}
         </Paper>
-      </Container>
+      </Container><div id="paperout"></div>
 
       <Grid
         container

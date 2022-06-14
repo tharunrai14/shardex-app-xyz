@@ -1,17 +1,23 @@
-#docsb{
- position: relative;
- bottom: -20px;
- left:0px;
- background-color: black;
- color: #fff;
- border: 2px solid white;
-}
 
+
+#pback{
+
+     position: relative;
+     
+     background: linear-gradient(45deg ,#5472eb, #A9FFFD,  #367fdb, #A760FF, #FF80B0);
+  padding: 3px;
+  border-radius: 15px;
+    bottom: 200px;
+    
+ 
+    width: fit-content ;
+    margin-top: 380px;
+}
 #paperr{
     background-color:#F9F9F9;
     position: relative;
-    bottom: 200px;
-    border: 2px solid rgb(7, 7, 7);
+   border: 2px solid black;
+    
     text-align: center;
 }
 
@@ -35,4 +41,43 @@ img
 width: 130px;
 margin-left: -10px;
 
+}
+#bold{
+font-size: larger;
+font-weight: 500;
+
+}
+
+#instr{
+   font-size: medium; 
+}
+@media screen and (max-width:460px){
+    #instr{
+        font-size: small; 
+     }
+
+
+}
+    
+
+
+#dblink
+{
+
+    position: relative;
+    bottom: -0px;
+    left:0px;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: black;
+    color: #fff;
+    border: 2px solid white;
+}
+#dblink a:hover
+{
+
+
+
+    background-color: #fff;
+    color: black;
 }

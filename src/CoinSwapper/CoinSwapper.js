@@ -396,7 +396,7 @@ function CoinSwapper(props) {
             ><LoadingButton id="albttn" loading={loading}/>
              <span id='bspan1'> Approve  And  Swap</span>
           
-           
+            
            </div>
           </Grid>
         </Paper></div>
@@ -410,7 +410,7 @@ function CoinSwapper(props) {
         alignItems="flex-end"
       >
        
-      </Grid>
+      </Grid> <a id='faucetb'>Claim <span id="100shm">100 SHM</span></a>
     </div>
   );
 }

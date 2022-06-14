@@ -24,8 +24,8 @@ class NavBar extends Component {
       <nav id="navbar" >
         
         <img src={Image} onClick="javascript:history.go(0)" alt='logo'></img>
-        <NightsStayIcon id='nicon'></NightsStayIcon>
        
+        <Sidebar />
      
         <div className="NavbarItes">
           <ul className={`nav-menu`}>

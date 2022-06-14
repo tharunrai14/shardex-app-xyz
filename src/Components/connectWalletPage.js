@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './logobt.svg';
+import logo from './logowt80.svg';
 import {
   AppBar,
   Container,
@@ -21,7 +21,6 @@ const styles = (theme) => ({
     paddingBottom: theme.spacing(2),
     maxWidth: 400,
     margin: "auto",
-    marginTop: "400px",
     textAlign:"CenterFocusStrong"
      },
   fullWidth: {
@@ -57,7 +56,8 @@ function ConnectWalletPage() {
   return (
     <div >  <img src={logo} alt="Logo" />
      
-      <Container >
+      <Container  id='pback'>
+     
         <Paper id="paperr" className={classes.paperContainer}>
           <Typography
           
@@ -71,17 +71,14 @@ function ConnectWalletPage() {
 
 
           </Typography>
-          <Typography 
-          font-size='2rem'
-          
-          
-          ><p>Make Sure You Are Conected to Shardeum Liberty
+          <Typography
+          ><p id='instr'>Make Sure You Are Conected to Shardeum Liberty
 
 
 
           </p>
 
-          <p><button id="docsb" href="">Shardeum Docs</button></p>
+          <p>  <a id="dblink" href="https://docs.shardeum.org/basics/endpoints">Shardeum Docs</a></p>
           &nbsp;</Typography>
          <span id="smalltxt">Try <span><a  href="javascript:history.go(0)">Refreshing</a></span> Page If you are connected</span> 
         </Paper>

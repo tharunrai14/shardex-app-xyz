@@ -141,3 +141,22 @@ padding-bottom: 2rem;
 #albttn{
   
 }
+#faucetb{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    animation:  infinite;
+    animation-name: clickme;
+    animation-duration: 1s;
+  }
+  @keyframes clickme {
+    from {background-color: rgb(40, 40, 216);}
+    to {background-color: rgb(34, 70, 216);
+        
+    }
+  }
