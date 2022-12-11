@@ -1,7 +1,7 @@
-export const networks = [8080];
+export const networks = [8081];
 
 export const ChainId = {
-  MAINNET: 8080,
+  MAINNET: 8081,
   
   
 };
